@@ -20,3 +20,7 @@ all: ${TARGETS}
 # markdown
 %.md: %.do.txt
 	doconce format markdown $<
+
+# remove targets - use with care
+clean:
+	rm ${TARGETS}
