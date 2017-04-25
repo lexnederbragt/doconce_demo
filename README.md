@@ -3,6 +3,8 @@
 To demonstrate doconce functionality  
 (and use to help with submitting issues/bug reports :-) )
 
+Note that on <https://uio-cels.github.io/doconce_demo/>, the markdown version will be rendered as html.
+
 # Simple text
 
 |Subject|doconce|html|pdf|ipynb|markdown|
