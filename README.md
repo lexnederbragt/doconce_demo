@@ -1,9 +1,10 @@
 # doconce demos
 
-To demonstrate doconce functionality  
-(and use to help with submitting issues/bug reports :-) )
+To demonstrate [doconce](http://hplgit.github.io/doconce/doc/pub/manual/manual.html) functionality.
 
-Note that on <https://uio-cels.github.io/doconce_demo/>, the markdown version will be rendered as html.
+Note that on <https://lexnederbragt.github.io/doconce_demo/>, the markdown version will be rendered as html.
+
+Also check out rendered files [on github](https://github.com/lexnederbragt/doconce_demo).
 
 # Simple text
 
