@@ -11,6 +11,6 @@ To demonstrate doconce functionality
 
 # Simple slides
 
-|Subject|slides | doconce|html|pdf|ipynb|markdown|
+|Subject|doconce | slides|html|pdf|ipynb|markdown|
 |-------|-------|-------|----|---|-----|--------|
-|simple text|[slides](slide1/slide1.slides.html)|[doconce](text1/text1.do.txt)|[html](text1/text1.html)|[pdf](text1/text1.pdf)|[ipynb](text1/text1.do.txt)|[markdown](text1/text1.md)|
+|simple slides|[doconce](text1/text1.do.txt)|[slides](slide1/slide1.slides.html)|[html](text1/text1.html)|[pdf](text1/text1.pdf)|[ipynb](text1/text1.do.txt)|[markdown](text1/text1.md)|
