@@ -1,8 +1,17 @@
-BASENAME   := slide1
-EXTENSIONS := .html .pdf .ipynb .md .slides.html
-TARGETS     := $(addprefix ${BASENAME}, ${EXTENSIONS} )
+include config.mk
 
-all : ${TARGETS}
+BASENAME   := slide1
+DOCONCE    := $(addprefix ${BASENAME}, .do.txt )
+EXTENSIONS := .html .pdf .ipynb .md
+TARGETS    := $(addprefix ${BASENAME}, ${EXTENSIONS} )
+
+all : ${DOCONCE} ${TARGETS}
+
+# doconce file
+
+# Building up the doconce file by adding successive doconce files
+${DOCONCE} : ${DO_FILES}
+	source ${BASENAME}.prepare.sh > $@
 
 # html
 %.html : %.do.txt
@@ -23,8 +32,8 @@ all : ${TARGETS}
 
 # slides
 %.slides.html : %.do.txt
-		doconce format html $< --html_output=slide1.slides --pygments_html_style=perldoc --keep_pygments_html_bg SLIDE_TYPE=reveal SLIDE_THEME=beige --skip_inline_comments \
-		&& doconce slides_html $*.slides reveal --html_slide_theme=beige
+	doconce format html $< --html_output=slide1.slides --pygments_html_style=perldoc --keep_pygments_html_bg SLIDE_TYPE=reveal SLIDE_THEME=beige --skip_inline_comments \
+	&& doconce slides_html $*.slides reveal --html_slide_theme=beige
 
 
 # remove targets - use with care
