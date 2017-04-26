@@ -5,22 +5,22 @@ TARGETS     := $(addprefix ${BASENAME}, ${EXTENSIONS} )
 all: ${TARGETS}
 
 # html
-%.html: %.do.txt
+%.html : %.do.txt
 	doconce format html $<
 
 # pdf
-%.pdf: %.do.txt
+%.pdf : %.do.txt
 	doconce format pdflatex $< --latex_code_style=vrb && \
 	pdflatex $*.tex
 
 # jupyter notebook
-%.ipynb: %.do.txt
+%.ipynb : %.do.txt
 	doconce format ipynb $<
 
 # markdown
-%.md: %.do.txt
+%.md : %.do.txt
 	doconce format markdown $<
 
 # remove targets - use with care
-clean:
+clean :
 	rm ${TARGETS}
