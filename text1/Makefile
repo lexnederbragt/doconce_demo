@@ -10,7 +10,7 @@ all : ${DOCONCE} ${TARGETS}
 # doconce file
 
 # Building up the doconce files by adding successive doconce files
-${DOCONCE} : ${ELEMENTS}
+${DOCONCE} : ${DO_FILES}
 	source ${BASENAME}.prepare.sh > $@
 
 # html

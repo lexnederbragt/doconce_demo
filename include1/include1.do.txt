@@ -2,12 +2,12 @@
 
 ===== Plain text =====
 
-# #include "../elements/code1_nocode.do.txt"
+# #include "../do_files/code1_nocode.do.txt"
 
 ===== Explanation =====
 
-# #include "../elements/explain1.do.txt"
+# #include "../do_files/explain1.do.txt"
 
 ===== Math =====
 
-# #include "../elements/math1.do.txt"
+# #include "../do_files/math1.do.txt"

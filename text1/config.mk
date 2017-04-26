@@ -1,2 +1,2 @@
-# which elemtn doconce files to include as dependancies
-ELEMENTS   := ../elements/code1.do.txt ../elements/explain1.do.txt ../elements/math1.do.txt
+# which doconce files to include as dependencies
+DO_FILES   := ../do_files/code1.do.txt ../do_files/explain1.do.txt ../do_files/math1.do.txt
