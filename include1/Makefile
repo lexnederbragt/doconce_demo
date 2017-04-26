@@ -1,8 +1,17 @@
-BASENAME   := include1
-EXTENSIONS := .html .pdf .ipynb .md
-TARGETS     := $(addprefix ${BASENAME}, ${EXTENSIONS} )
+include config.mk
 
-all: ${TARGETS}
+BASENAME   := include1
+DOCONCE    := $(addprefix ${BASENAME}, .do.txt )
+EXTENSIONS := .html .pdf .ipynb .md
+TARGETS    := $(addprefix ${BASENAME}, ${EXTENSIONS} )
+
+all : ${DOCONCE} ${TARGETS}
+
+# doconce file
+
+# Building up the doconce file by adding successive doconce files
+${DOCONCE} : ${DO_FILES}
+	source ${BASENAME}.prepare.sh > $@
 
 # html
 %.html : %.do.txt
