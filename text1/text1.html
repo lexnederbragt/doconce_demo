@@ -40,7 +40,10 @@ div { text-align: justify; text-justify: inter-word; }
 </head>
 
 <!-- tocinfo
-{'highest level': 4, 'sections': []}
+{'highest level': 2,
+ 'sections': [('Plain text', 2, None, '___sec0'),
+              ('Explanation', 2, None, '___sec1'),
+              ('Math', 2, None, '___sec2')]}
 end of tocinfo -->
 
 <body>
@@ -64,10 +67,13 @@ MathJax.Hub.Config({
     
 <!-- ------------------- main content ---------------------- -->
 
+<h2 id="___sec0">Plain text </h2>
+
+<p>
 Here is some plain text.
 
 <p>
-Now we add some python code with output
+Now we add some python code with output:
 
 <p>
 
@@ -82,6 +88,9 @@ Now we add some python code with output
 <!-- code=text (!bc pyout) typeset with pygments style "default" -->
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>55
 </pre></div>
+
+<h2 id="___sec1">Explanation </h2>
+
 <p>
 Let's explain some of this code
 (setting the code to be unexecutable):
@@ -97,6 +106,8 @@ The <code>for</code> loop:
 </pre></div>
 <p>
 Goes through numbers 0 to 9 and adds 1 more than each number to the <code>total</code> variable.
+
+<h2 id="___sec2">Math </h2>
 
 <p>
 Now we add some mathematical formula:

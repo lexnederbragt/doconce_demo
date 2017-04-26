@@ -1,6 +1,8 @@
+### Plain text
+
 Here is some plain text.
 
-Now we add some python code with output
+Now we add some python code with output:
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.Python}
@@ -14,6 +16,8 @@ print(total)
 55
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+### Explanation
+
 Let's explain some of this code
 (setting the code to be unexecutable):
 
@@ -26,6 +30,8 @@ for number in range(10):
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Goes through numbers 0 to 9 and adds 1 more than each number to the `total` variable.
+
+### Math
 
 Now we add some mathematical formula:
 
