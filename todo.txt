@@ -1,0 +1,3 @@
+getting dependencies from prepare.sh file:
+
+grep "do.txt" text1.prepare.sh | awk 'BEGIN{ORS=" "}{print $2}'
