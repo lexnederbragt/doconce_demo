@@ -1,5 +1,13 @@
+# Building up the output by adding successive doconce files
+
+===== Plain text =====
+
 # #include "../elements/code1.do.txt"
 
+===== Explanation =====
+
 # #include "../elements/explain1.do.txt"
+
+===== Math =====
 
 # #include "../elements/math1.do.txt"

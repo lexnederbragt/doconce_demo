@@ -13,7 +13,9 @@ latex_figs
 *.dlog
 *.ilg
 *.ind
+
 tmp_mako*
+tmp_preprocess*
 
 .ipynb_checkpoints/
 .*_html_file_collection
