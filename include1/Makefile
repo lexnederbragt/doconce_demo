@@ -9,7 +9,7 @@ all : ${DOCONCE} ${TARGETS}
 # doconce file
 
 # Building up the doconce file by adding successive doconce files
-${DOCONCE} : ${DO_FILES}
+%.do.txt : %.prepare.sh ${DO_FILES}
 	source ${BASENAME}.prepare.sh > $@
 
 # html
