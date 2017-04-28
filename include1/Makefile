@@ -16,26 +16,22 @@ ${DOCONCE} : ${DO_FILES}
 %.html : %.do.txt
 	# Building html
 	doconce format html $<
-	#
 
 # pdf
 %.pdf : %.do.txt
 	# Building pdf
 	doconce format pdflatex $< --latex_code_style=vrb && \
 	pdflatex $*.tex
-	#
 
 # jupyter notebook
 %.ipynb : %.do.txt
 	# Building jupyter notebook
 	doconce format ipynb $<
-	#
 
 # markdown
 %.md : %.do.txt
 	# Building markdown
 	doconce format markdown $<
-	#
 
 # remove targets - use with care
 clean :
