@@ -1,6 +1,5 @@
-include config.mk
-
 BASENAME   := slide1
+DO_FILES   := $(shell grep -o \.\.\/do_files\/.*do.txt ${BASENAME}.prepare.sh)
 DOCONCE    := $(addprefix ${BASENAME}, .do.txt )
 EXTENSIONS := .html .pdf .ipynb .md
 TARGETS    := $(addprefix ${BASENAME}, ${EXTENSIONS} )
