@@ -1,7 +1,8 @@
 # commands used
-%.commands.sh : %.do.txt
-		make -n ${TARGETS} > $@ && \
-		make ${TARGETS}
+%.commands.sh : %.do.txt ${TARGETS}
+	touch $*.do.txt && \
+	make -n ${TARGETS} > $@ && \
+	make ${TARGETS}
 
 # Building up the doconce file by adding successive doconce files
 %.do.txt : %.prepare.sh ${DO_FILES}
