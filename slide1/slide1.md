@@ -1,6 +1,6 @@
 % Minimal slide demo
 % **Lex Nederbragt**
-% Apr 28, 2017
+% May 8, 2017
 
 <!-- !split -->
 

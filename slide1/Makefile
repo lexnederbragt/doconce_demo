@@ -1,6 +1,6 @@
 BASENAME   := slide1
 DO_FILES   := $(shell grep -o \.\.\/do_files\/.*do.txt ${BASENAME}.prepare.sh)
-EXTENSIONS := .html .pdf .ipynb .md
+EXTENSIONS := .html .pdf .ipynb .md .slides.html
 COMMANDS   := $(addsuffix .commands.sh, ${BASENAME})
 TARGETS    := $(addprefix ${BASENAME}, ${EXTENSIONS} )
 
