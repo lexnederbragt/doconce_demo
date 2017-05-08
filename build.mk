@@ -1,8 +1,8 @@
 # commands used
+# use the '--what-if' option to show
+# what would happen if do files was updated
 %.commands.sh : %.do.txt ${TARGETS}
-	touch $*.do.txt && \
-	make -n ${TARGETS} > $@ && \
-	make ${TARGETS}
+	make -n --what-if $< ${TARGETS} > $@
 
 # Building up the doconce file by adding successive doconce files
 %.do.txt : %.prepare.sh ${DO_FILES}

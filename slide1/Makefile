@@ -6,7 +6,9 @@ TARGETS    := $(addprefix ${BASENAME}, ${EXTENSIONS} )
 
 include ../build.mk
 
-all : ${COMMANDS}
+.PHONY : all
+
+all : ${COMMANDS} ${TARGETS}
 
 # remove targets - use with care
 clean :
