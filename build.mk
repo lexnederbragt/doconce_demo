@@ -31,5 +31,6 @@
 
 # slides
 %.slides.html : %.do.txt
+	# Building slides
 	doconce format html $< --html_output=slide1.slides --pygments_html_style=perldoc --keep_pygments_html_bg SLIDE_TYPE=reveal SLIDE_THEME=beige --skip_inline_comments \
 	&& doconce slides_html $*.slides reveal --html_slide_theme=beige

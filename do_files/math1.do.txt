@@ -2,6 +2,6 @@ Now we add some mathematical formula:
 
 !bt
 \begin{equation*}
-{E_{n}} = E_{n-1} + (1 - E_{n-1}/K)E_{n-1}.
+K_n = rwTK_{n-1}\left (1 - \frac{K_{n-1}}{H}\right ) - K_{n-1}.
 \end{equation*}
 !et
