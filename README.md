@@ -8,12 +8,12 @@ Also check out rendered files [on github](https://github.com/lexnederbragt/docon
 
 # Simple text
 
-|Subject|doconce|html|pdf|ipynb|markdown|
-|-------|-------|----|---|-----|--------|
-|simple text|[doconce](text1/text1.do.txt)|[html](text1/text1.html)|[pdf](text1/text1.pdf)|[ipynb](text1/text1.ipynb)|[markdown](text1/text1.md)|
+|Subject|doconce|commands|html|pdf|ipynb|markdown|
+|-------|-------|--------|----|---|-----|--------|
+|simple text|[doconce](text1/text1.do.txt)|[commands](text1/text1.commands.sh)|[html](text1/text1.html)|[pdf](text1/text1.pdf)|[ipynb](text1/text1.ipynb)|[markdown](text1/text1.md)|
 
 # Simple slides
 
-|Subject|doconce | slides|html|pdf|ipynb|markdown|
-|-------|-------|-------|----|---|-----|--------|
-|simple slides|[doconce](text1/text1.do.txt)|[slides](slide1/slide1.slides.html)|[html](text1/text1.html)|[pdf](text1/text1.pdf)|[ipynb](text1/text1.ipynb)|[markdown](text1/text1.md)|
+|Subject|doconce|commands|slides|html|pdf|ipynb|markdown|
+|-------|-------|--------|------|----|---|-----|--------|
+|simple slides|[doconce](text1/text1.do.txt)|[commands](text1/text1.commands.sh)|[slides](slide1/slide1.slides.html)|[html](text1/text1.html)|[pdf](text1/text1.pdf)|[ipynb](text1/text1.ipynb)|[markdown](text1/text1.md)|

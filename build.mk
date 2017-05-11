@@ -2,7 +2,7 @@
 # use the '--what-if' option to show
 # what would happen if do files was updated
 %.commands.sh : %.do.txt ${TARGETS}
-	make -n --what-if $< ${TARGETS} > $@
+	make -n --what-if $< ${TARGETS} | ../scripts/format_commands.sh > $@
 
 # Building up the doconce file by adding successive doconce files
 %.do.txt : %.prepare.sh ${DO_FILES}
