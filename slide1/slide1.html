@@ -44,7 +44,8 @@ div { text-align: justify; text-justify: inter-word; }
 {'highest level': 2,
  'sections': [('Plain text', 2, None, '___sec0'),
               ('Explanation', 2, None, '___sec1'),
-              ('Math', 2, None, '___sec2')]}
+              ('Figure', 2, None, '___sec2'),
+              ('Math', 2, None, '___sec3')]}
 end of tocinfo -->
 
 <body>
@@ -84,7 +85,7 @@ MathJax.Hub.Config({
 
 <br>
 <p>
-<center><h4>May 8, 2017</h4></center> <!-- date -->
+<center><h4>May 11, 2017</h4></center> <!-- date -->
 <br>
 <p>
 <!-- !split -->
@@ -134,14 +135,31 @@ Goes through numbers 0 to 9 and adds 1 more than each number to the <code>total<
 <p>
 <!-- !split -->
 
-<h2 id="___sec2">Math </h2>
+<h2 id="___sec2">Figure </h2>
+
+<p>
+See figure <a href="#PythonDict">1</a> for an illustration that explains the python dictionary concept.
+
+<p>
+<center> <!-- figure label: --> <div id="PythonDict"></div> <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 1:  Data structure concept of a dictionary in python.  <!-- caption label: PythonDict --> </p></center>
+<p><img src="../img/PythonDict.jpg" align="bottom" width=400></p>
+</center>
+
+<p>
+The figure was taken
+<a href="https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg" target="_self">from Wikimedia Commons</a>.
+<!-- !split -->
+
+<h2 id="___sec3">Math </h2>
 
 <p>
 Now we add some mathematical formula:
 
 $$
 \begin{equation*}
-{E_{n}} = E_{n-1} + (1 - E_{n-1}/K)E_{n-1}.
+K_n = rwTK_{n-1}\left (1 - \frac{K_{n-1}}{H}\right ) - K_{n-1}.
 \end{equation*}
 $$
 

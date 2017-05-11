@@ -1,4 +1,6 @@
 # Sources of images
 
-* For-loop-diagram
-  * By No machine-readable author provided. Faxe assumed (based on copyright claims). - No machine-readable source provided. Own work assumed (based on copyright claims)., CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=717757
+* PythonDict
+  * original from https://developers.google.com/edu/python/dict-files?csw=1
+  * downloaded from Wikimedia Commons https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg
+  * By Nick Parlante (Google's Python Class) [CC BY-SA 2.5 (http://creativecommons.org/licenses/by-sa/2.5)], via Wikimedia Commons

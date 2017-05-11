@@ -8,6 +8,9 @@
 
 # #include "../do_files/explain1.do.txt"
 
+===== Figure =====
+
+# #include "../do_files/figure1.do.txt"
 ===== Math =====
 
 # #include "../do_files/math1.do.txt"

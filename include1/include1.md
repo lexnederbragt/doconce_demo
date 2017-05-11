@@ -33,13 +33,22 @@ for number in range(10):
 
 Goes through numbers 0 to 9 and adds 1 more than each number to the `total` variable.
 
+### Figure
+
+See [figure](#PythonDict) for an illustration that explains the python dictionary concept.
+
+<!-- <img src="../img/PythonDict.jpg" width=400><p><em>Data structure concept of a dictionary in python. <div id="PythonDict"></div></em></p> -->
+![<p><em>Data structure concept of a dictionary in python. <div id="PythonDict"></div></em></p>](../img/PythonDict.jpg)
+
+The figure was taken
+[from Wikimedia Commons](https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg).
 ### Math
 
 Now we add some mathematical formula:
 
 $$
 
-{E_{n}} = E_{n-1} + (1 - E_{n-1}/K)E_{n-1}.
+K_n = rwTK_{n-1}\left (1 - \frac{K_{n-1}}{H}\right ) - K_{n-1}.
 
 $$
 

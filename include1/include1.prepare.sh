@@ -8,6 +8,9 @@ echo "===== Explanation ====="
 echo
 echo '# #include "../do_files/explain1.do.txt"'
 echo
+echo "===== Figure ====="
+echo
+echo '# #include "../do_files/figure1.do.txt"'
 echo "===== Math ====="
 echo
 echo '# #include "../do_files/math1.do.txt"'

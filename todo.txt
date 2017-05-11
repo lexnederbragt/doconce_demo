@@ -1,0 +1,2 @@
+* Add links to commands.sh to README
+* add rst output
