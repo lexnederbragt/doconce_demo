@@ -1,6 +1,6 @@
 # *Include* functionality - details
 
-Below are links to the individual `doconce` files used by the ['master' `doconce` file](include1/include1.do.txt):
+Below are links to the individual `doconce` files used by the ['master' `doconce` file](include1.do.txt):
 
 * [Some python code](../do_files/code1_nocode.do.txt)
   * note how this `doconce` file loads the python code from an [external script file](../code/code1.py)
