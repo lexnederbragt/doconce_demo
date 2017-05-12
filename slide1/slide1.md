@@ -1,6 +1,6 @@
 % Minimal slide demo
 % **Lex Nederbragt**
-% May 11, 2017
+% May 12, 2017
 
 <!-- !split -->
 
@@ -38,6 +38,26 @@ for number in range(10):
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Goes through numbers 0 to 9 and adds 1 more than each number to the `total` variable.
+
+<!-- !split -->
+### Table
+
+The data on exponential growth can be found in the table below.
+
+
+time    count    
+----  ---------  
+ 60     10000    
+ 90     25587    
+120     76327    
+150     212715   
+180     619511   
+210    1940838   
+240    4240760   
+270    13993730  
+300    38971086  
+330   105614040  
+
 
 <!-- !split -->
 ### Figure

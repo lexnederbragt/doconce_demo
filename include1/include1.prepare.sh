@@ -8,6 +8,10 @@ echo "===== Explanation ====="
 echo
 echo '# #include "../do_files/explain1.do.txt"'
 echo
+echo "===== Table ====="
+echo
+echo '# #include "../do_files/table1_nodata.do.txt"'
+echo
 echo "===== Figure ====="
 echo
 echo '# #include "../do_files/figure1.do.txt"'

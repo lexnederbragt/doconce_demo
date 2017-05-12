@@ -15,6 +15,11 @@ echo
 cat ../do_files/explain1.do.txt
 echo
 echo "!split"
+echo "===== Table ====="
+echo
+cat ../do_files/table1.do.txt
+echo
+echo "!split"
 echo "===== Figure ====="
 echo
 cat ../do_files/figure1.do.txt

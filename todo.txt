@@ -1,2 +1,3 @@
-* Add links to commands.sh to README
+* regenerate do_files/exp_growth.do.txt when needed (through build.mk)
 * add rst output
+* add more explanation in readme, poitning out what is demonstrated
