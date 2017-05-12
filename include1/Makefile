@@ -8,7 +8,11 @@ include ../build.mk
 
 .PHONY : all
 
-all : ${COMMANDS} ${TARGETS}
+all : ${COMMANDS} ${TARGETS} ../do_files/exp_growth.table.do.txt
+
+# generate table from csv
+../do_files/exp_growth.table.do.txt : ../data/exp_growth.csv
+	doconce csv2table $< > $@
 
 # remove targets - use with care
 clean :
