@@ -1,4 +1,2 @@
-* regenerate do_files/exp_growth.do.txt when needed (through build.mk)
 * add rst output
-* add more explanation in readme, pointing out what is demonstrated
-* scripts/format_commands.sh and ../data/exp_growth.csv should be dependencies for include1
+* code/code1.py and ../data/exp_growth.csv should be dependencies for include1

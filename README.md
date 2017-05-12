@@ -4,11 +4,15 @@ To demonstrate [doconce](http://hplgit.github.io/doconce/doc/pub/manual/manual.h
 
 Note that on <https://lexnederbragt.github.io/doconce_demo/>, the markdown version will be rendered as html.
 
-Also check out rendered files [on github](https://github.com/lexnederbragt/doconce_demo).
+Also check out the files as rendered [on github](https://github.com/lexnederbragt/doconce_demo).
+
+* `doconce` links to the doconce file used to create the different output formats
+* `commands` lists the unix commands used to convert the `doconce`
+
 
 # Text
 
-Demonstrates a text with python code, a figure and some math converted to different formats.
+Demonstrates a text with python code, a table and a figure and some math converted to different formats.
 
 |Subject|doconce|commands|html|pdf|ipynb|markdown|
 |-------|-------|--------|----|---|-----|--------|
@@ -16,7 +20,7 @@ Demonstrates a text with python code, a figure and some math converted to differ
 
 # Slides
 
-Demonstrates slides with python code, a figure and some math converted to different formats, including a `reveal.js` slide set.
+Demonstrates slides with python code, a table and a figure and some math converted to different formats, including a `reveal.js` slide set.
 
 |Subject|doconce|commands|slides|html|pdf|ipynb|markdown|
 |-------|-------|--------|------|----|---|-----|--------|
@@ -24,8 +28,19 @@ Demonstrates slides with python code, a figure and some math converted to differ
 
 # *Include* functionality
 
-Demonstrates how to include other doconce files and code from a file.
+Demonstrates how to include other doconce files and code from a file. Note how the `doconce` file contains only links to other `doconce` files, yet still results in the same outputs as for the **Text** example. If you dig deeper, this example also demonstrates the option of including external python code and comma-separated data files into a doconce file. For details, check [this explanation](include1/index.md).
+
 
 |Subject|doconce|commands|html|pdf|ipynb|markdown|
 |-------|-------|--------|----|---|-----|--------|
 |Include|[doconce](include1/include1.do.txt)|[commands](include1/include1.commands.sh)|[html](include1/include1.html)|[pdf](include1/include1.pdf)|[ipynb](include1/include1.ipynb)|[markdown](include1/include1.md)|
+
+-----
+## Behind the scene
+
+Some documents in this repository are generated automatically, under the control of a `Makefile` in each folder, making for a flexible, modular setup:
+
+* each folder has a script to build the `doconce` file out of individual smaller `doconce` files in the `do_files` folder
+* the `Makefile`, using instructions in the `build.mk` file, is used to generate all the outputs
+* the `Makefile` also generates the `commands.sh` file listing the commands used to generate all output
+* in principle, one could execute this `commands.sh` to (re)create all outputs
