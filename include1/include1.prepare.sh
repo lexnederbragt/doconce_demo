@@ -15,6 +15,7 @@ echo
 echo "===== Figure ====="
 echo
 echo '# #include "../do_files/figure1.do.txt"'
+echo
 echo "===== Math ====="
 echo
 echo '# #include "../do_files/math1.do.txt"'
