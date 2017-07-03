@@ -1,6 +1,6 @@
 % Minimal slide demo
 % **Lex Nederbragt**
-% May 12, 2017
+% Jul 3, 2017
 
 <!-- !split -->
 
@@ -11,16 +11,16 @@ Here is some plain text.
 Now we add some python code with output:
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.Python}
+```python
 total = 0
 for number in range(10):
    total = total + (number + 1)
 print(total)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 55
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
 <!-- !split -->
 
@@ -32,10 +32,10 @@ Let's explain some of this code
 The `for` loop:
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 for number in range(10):
    total = total + (number + 1)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
 Goes through numbers 0 to 9 and adds 1 more than each number to the `total` variable.
 
@@ -44,21 +44,23 @@ Goes through numbers 0 to 9 and adds 1 more than each number to the `total` vari
 
 The data on exponential growth can be found in the table below.
 
-
-time    count    
-----  ---------  
- 60     10000    
- 90     25587    
-120     76327    
-150     212715   
-180     619511   
-210    1940838   
-240    4240760   
-270    13993730  
-300    38971086  
-330   105614040  
-
-
+<table border="1">
+<thead>
+<tr><th align="center">time</th> <th align="center">  count  </th> </tr>
+</thead>
+<tbody>
+<tr><td align="center">   60      </td> <td align="center">   10000        </td> </tr>
+<tr><td align="center">   90      </td> <td align="center">   25587        </td> </tr>
+<tr><td align="center">   120     </td> <td align="center">   76327        </td> </tr>
+<tr><td align="center">   150     </td> <td align="center">   212715       </td> </tr>
+<tr><td align="center">   180     </td> <td align="center">   619511       </td> </tr>
+<tr><td align="center">   210     </td> <td align="center">   1940838      </td> </tr>
+<tr><td align="center">   240     </td> <td align="center">   4240760      </td> </tr>
+<tr><td align="center">   270     </td> <td align="center">   13993730     </td> </tr>
+<tr><td align="center">   300     </td> <td align="center">   38971086     </td> </tr>
+<tr><td align="center">   330     </td> <td align="center">   105614040    </td> </tr>
+</tbody>
+</table>
 <!-- !split -->
 ### Figure
 
