@@ -9,6 +9,7 @@ Also check out the files as rendered [on github](https://github.com/lexnederbrag
 * `doconce` links to the doconce file used to create the different output formats
 * `commands` lists the unix commands used to convert the `doconce`
 
+Requieres doconce and LaTex to PDF conversion software, as well as [deck2pdf](https://github.com/melix/deck2pdf).
 
 # Text
 
@@ -20,11 +21,19 @@ Demonstrates a text with python code, a table and a figure and some math convert
 
 # Slides
 
-Demonstrates slides with python code, a table and a figure and some math converted to different formats, including a `reveal.js` slide set.
+Demonstrates slides with python code, a table and a figure and some math converted to different formats, including `reveal.js` and `deck.js` slide sets.
 
-|Subject|doconce|commands|slides|html|pdf|ipynb|markdown|
-|-------|-------|--------|------|----|---|-----|--------|
-|Slides|[doconce](slide1/slide1.do.txt)|[commands](slide1/slide1.commands.sh)|[slides](slide1/slide1.slides.html)|[html](slide1/slide1.html)|[pdf](slide1/slide1.pdf)|[ipynb](slide1/slide1.ipynb)|[markdown](slide1/slide1.md)|
+Slides:  
+
+|Type  |html|pdf|
+|------|----|---|
+|reveal|[html](slide1/slide1.reveal.html)|[pdf](slide1/slide1.reveal.pdf)|
+|deck  |[html](slide1/slide1.deck.html)|[pdf](slide1/slide1.deck.pdf)
+
+|Subject|doconce|commands|html|pdf|ipynb|markdown|
+|-------|-------|--------|----|---|-----|--------|
+|Slides|[doconce](slide1/slide1.do.txt)|[commands](slide1/slide1.commands.sh)|[reveal](slide1/slide1.slides.html)|[pdf](slide1/slide1.pdf)|[ipynb](slide1/slide1.ipynb)|[markdown](slide1/slide1.md)|
+
 
 # *Include* functionality
 

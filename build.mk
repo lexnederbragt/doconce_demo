@@ -29,8 +29,24 @@
 	# Building markdown
 	doconce format markdown $<
 
-# slides
-%.slides.html : %.do.txt
-	# Building slides
-	doconce format html $< --html_output=slide1.slides --pygments_html_style=perldoc --keep_pygments_html_bg SLIDE_TYPE=reveal SLIDE_THEME=beige --skip_inline_comments \
-	&& doconce slides_html $*.slides reveal --html_slide_theme=beige
+# reveal.js slides
+%.reveal.html : %.do.txt
+	# Building reveal.js slides
+	doconce format html $< --html_output=$*.reveal --pygments_html_style=perldoc --keep_pygments_html_bg SLIDE_TYPE=reveal SLIDE_THEME=beige --skip_inline_comments \
+	&& doconce slides_html $*.reveal reveal --html_slide_theme=beige
+
+# reveal.js PDF
+%.reveal.pdf : %.reveal.html
+	# Building PDF of reveal.js slides
+	deck2pdf --profile=revealjs $< $@
+
+# deck.js slides
+%.deck.html : %.do.txt
+	# Building deck.js slides
+	doconce format html $< --html_output=$*.deck --pygments_html_style=autumn --keep_pygments_html_bg SLIDE_TYPE=reveal SLIDE_THEME=swiss --skip_inline_comments \
+	&& doconce slides_html $*.deck deck --html_slide_theme=swiss
+
+# deck.js PDF
+%.deck.pdf : %.deck.html
+	# Building PDF of deck.js slides
+	deck2pdf  --profile=deckjs $< $@
