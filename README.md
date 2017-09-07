@@ -32,7 +32,7 @@ Slides:
 
 |Subject|doconce|commands|html|pdf|ipynb|markdown|
 |-------|-------|--------|----|---|-----|--------|
-|Slides|[doconce](slide1/slide1.do.txt)|[commands](slide1/slide1.commands.sh)|[reveal](slide1/slide1.slides.html)|[pdf](slide1/slide1.pdf)|[ipynb](slide1/slide1.ipynb)|[markdown](slide1/slide1.md)|
+|Slides|[doconce](slide1/slide1.do.txt)|[commands](slide1/slide1.commands.sh)|[html](slide1/slide1.html)|[pdf](slide1/slide1.pdf)|[ipynb](slide1/slide1.ipynb)|[markdown](slide1/slide1.md)|
 
 
 # *Include* functionality
