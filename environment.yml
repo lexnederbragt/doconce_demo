@@ -1,0 +1,13 @@
+name: doconce_1_4_13
+channels:
+  - defaults
+dependencies:
+  - doconce
+  - python
+  - future
+  - notebook
+  - matplotlib
+  - pandas
+  - metakernel
+  - scipy
+  - ffmpeg
