@@ -59,6 +59,7 @@ See [figure](#PythonDict) for an illustration that explains the python dictionar
 
 The figure was taken
 [from Wikimedia Commons](https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg).
+
 ### Math
 
 Now we add some mathematical formula:

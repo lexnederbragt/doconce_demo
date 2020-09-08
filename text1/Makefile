@@ -12,4 +12,4 @@ all : ${COMMANDS} ${TARGETS}
 
 # remove targets - use with care
 clean :
-	rm ${COMMANDS}
+	rm ${TARGETS}
