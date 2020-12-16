@@ -16,13 +16,13 @@
 # pdf
 %.pdf : %.do.txt
 	# Building pdf
-	doconce format pdflatex $< --latex_code_style=vrb && \
+	doconce format pdflatex $< --latex_code_style=vrb --execute && \
 	pdflatex $*.tex
 
 # jupyter notebook
 %.ipynb : %.do.txt
 	# Building jupyter notebook
-	doconce format ipynb $<
+	doconce format ipynb $< --execute
 
 # markdown
 %.md : %.do.txt

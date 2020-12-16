@@ -6,7 +6,6 @@ Automatically generated HTML file from DocOnce source
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title></title>
 
@@ -85,7 +84,7 @@ Predict what this code will do
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>a <span style="color: #666666">=</span> <span style="color: #666666">2</span>
 b <span style="color: #666666">=</span> <span style="color: #666666">3</span>
 <span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(a, b):
-    <span style="color: #008000">print</span>(i)
+    <span style="color: #008000; font-weight: bold">print</span>(i)
 </pre></div>
 <p>
 <!-- --- begin answer of exercise --- -->
@@ -116,7 +115,7 @@ There are many ways to do this. We will show two of them.
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>a <span style="color: #666666">=</span> <span style="color: #666666">2</span>
 b <span style="color: #666666">=</span> <span style="color: #666666">5</span>
 <span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(a, b):
-    <span style="color: #008000">print</span>(i)
+    <span style="color: #008000; font-weight: bold">print</span>(i)
 </pre></div>
 <p>
 An alternative:
@@ -126,7 +125,7 @@ An alternative:
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>a <span style="color: #666666">=</span> <span style="color: #666666">1</span>
 b <span style="color: #666666">=</span> <span style="color: #666666">4</span>
 <span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(a, b):
-    <span style="color: #008000">print</span>(i <span style="color: #666666">+</span> <span style="color: #666666">1</span>)
+    <span style="color: #008000; font-weight: bold">print</span>(i <span style="color: #666666">+</span> <span style="color: #666666">1</span>)
 </pre></div>
 <p>
 <!-- --- end solution of exercise --- -->
@@ -156,7 +155,7 @@ x_0 = 20
 $$
 
 <p>
-Question without code anser:
+Question without code answer:
 Can you think of an example case that has this difference equation as model?
 
 <p>
@@ -178,6 +177,7 @@ x <span style="color: #666666">=</span> [<span style="color: #666666">20</span>]
 i <span style="color: #666666">=</span> <span style="color: #666666">1</span>
 <span style="color: #008000; font-weight: bold">while</span> i <span style="color: #666666">&lt;</span> <span style="color: #666666">10</span>:
     x<span style="color: #666666">.</span>append(<span style="color: #666666">1.5</span> <span style="color: #666666">*</span> x[i<span style="color: #666666">-1</span>] <span style="color: #666666">-</span> <span style="color: #666666">20</span>)
+    i <span style="color: #666666">=</span> i <span style="color: #666666">+</span> <span style="color: #666666">1</span>
 
 plt<span style="color: #666666">.</span>plot(x)
 plt<span style="color: #666666">.</span>show()

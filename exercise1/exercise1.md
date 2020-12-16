@@ -77,7 +77,7 @@ x_0 = 20
 \end{equation}
 $$
 
-Question without code anser:
+Question without code answer:
 Can you think of an example case that has this difference equation as model?
 
 
@@ -97,6 +97,7 @@ x = [20]
 i = 1
 while i < 10:
     x.append(1.5 * x[i-1] - 20)
+    i = i + 1
 
 plt.plot(x)
 plt.show()

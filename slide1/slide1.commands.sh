@@ -2,11 +2,11 @@
 doconce format html slide1.do.txt
 
 # Building pdf
-doconce format pdflatex slide1.do.txt --latex_code_style=vrb && \
+doconce format pdflatex slide1.do.txt --latex_code_style=vrb --execute && \
 	pdflatex slide1.tex
 
 # Building jupyter notebook
-doconce format ipynb slide1.do.txt
+doconce format ipynb slide1.do.txt --execute
 
 # Building markdown
 doconce format markdown slide1.do.txt

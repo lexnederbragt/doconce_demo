@@ -9,7 +9,7 @@ Also check out the files as rendered [on github](https://github.com/lexnederbrag
 * `doconce` links to the doconce file used to create the different output formats
 * `commands` lists the unix commands used to convert the `doconce`
 
-Requieres doconce and LaTex to PDF conversion software, as well as [deck2pdf](https://github.com/melix/deck2pdf).
+Requires doconce and LaTex to PDF conversion software, as well as [deck2pdf](https://github.com/melix/deck2pdf).
 
 # Text
 
