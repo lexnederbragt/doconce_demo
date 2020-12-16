@@ -1,2 +1,5 @@
 * add rst output
 * code/code1.py and ../data/exp_growth.csv should be dependencies for include1
+* exercise1.do.txt
+  * split between with solutions and without
+  * should not be removed at end of make
