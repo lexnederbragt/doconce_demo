@@ -19,3 +19,5 @@ tmp_preprocess*
 
 .ipynb_checkpoints/
 .*_html_file_collection
+*.doconce_figure_cache/
+.DS_Store
