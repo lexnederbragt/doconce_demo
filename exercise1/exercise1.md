@@ -19,7 +19,6 @@ for i in range(a, b):
 <!-- --- begin answer of exercise --- -->
 *Answer.*
 Prints `2`
-
 <!-- --- end answer of exercise --- -->
 
 *b)*
@@ -29,7 +28,6 @@ Modify the program so that it prints 2, 3 and 4.
 <!-- --- begin answer of exercise --- -->
 *Answer.*
 There are many ways to do this. We will show two of them.
-
 <!-- --- end answer of exercise --- -->
 
 
@@ -84,7 +82,6 @@ Can you think of an example case that has this difference equation as model?
 <!-- --- begin answer of exercise --- -->
 *Answer.*
 Not really
-
 <!-- --- end answer of exercise --- -->
 
 

@@ -1,6 +1,6 @@
 % Minimal slide demo
 % **Lex Nederbragt**
-% Dec 16, 2020
+% Dec 17, 2020
 
 <!-- !split -->
 

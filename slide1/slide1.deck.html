@@ -1,8 +1,8 @@
-\
 <!DOCTYPE html>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="generator" content="DocOnce: https://github.com/doconce/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Minimal slide demo">
 
 <title>Minimal slide demo</title>
@@ -126,10 +126,10 @@ hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa}
  .slide .alert-block > p, .alert-block > ul {margin-bottom:0}
  /*.slide .alert li {margin-top: 1em}*/
  .deck .alert-block p+p {margin-top:5px}
- /*.slide .alert-notice { background-image: url(http://hplgit.github.io/doconce/bundled/html_images//small_gray_notice.png); }
- .slide .alert-summary  { background-image:url(http://hplgit.github.io/doconce/bundled/html_images//small_gray_summary.png); }
- .slide .alert-warning { background-image: url(http://hplgit.github.io/doconce/bundled/html_images//small_gray_warning.png); }
- .slide .alert-question {background-image:url(http://hplgit.github.io/doconce/bundled/html_images/small_gray_question.png); } */
+ /*.slide .alert-notice { background-image: url(https://hplgit.github.io/doconce/bundled/html_images//small_gray_notice.png); }
+ .slide .alert-summary  { background-image:url(https://hplgit.github.io/doconce/bundled/html_images//small_gray_summary.png); }
+ .slide .alert-warning { background-image: url(https://hplgit.github.io/doconce/bundled/html_images//small_gray_warning.png); }
+ .slide .alert-question {background-image:url(https://hplgit.github.io/doconce/bundled/html_images/small_gray_question.png); } */
 
 </style>
 
@@ -194,7 +194,7 @@ MathJax.Hub.Config({
 
 <br>
 <p>
-<center><b style="font-weight: bold">Dec 16, 2020</b></center> <!-- date -->
+<center><b style="font-weight: bold">Dec 17, 2020</b></center> <!-- date -->
 <br>
 </section>
 
@@ -212,15 +212,15 @@ Now we add some python code with output:
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "autumn" -->
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>total = <span style="color: #009999">0</span>
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%;"><span></span>total = <span style="color: #009999">0</span>
 <span style="color: #0000aa">for</span> number <span style="color: #0000aa">in</span> <span style="color: #00aaaa">range</span>(<span style="color: #009999">10</span>):
    total = total + (number + <span style="color: #009999">1</span>)
-<span style="color: #0000aa">print</span>(total)
+<span style="color: #00aaaa">print</span>(total)
 </pre></div>
 <p>
 
 <!-- code=text (!bc pyout) typeset with pygments style "autumn" -->
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>55
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%;"><span></span>55
 </pre></div>
 </section>
 
@@ -239,7 +239,7 @@ The <code>for</code> loop:
 <p>
 
 <!-- code=text (!bc pycod -t) typeset with pygments style "autumn" -->
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>for number in range(10):
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%;"><span></span>for number in range(10):
    total = total + (number + 1)
 </pre></div>
 <p>
@@ -326,18 +326,18 @@ $$
 
 <!-- deck.status snippet
 <p class="deck-status">
-	<span class="deck-status-current"></span>
-	/
-	<span class="deck-status-total"></span>
+    <span class="deck-status-current"></span>
+    /
+    <span class="deck-status-total"></span>
 </p>
 -->
 
 <!-- deck.goto snippet
 <form action="." method="get" class="goto-form">
-	<label for="goto-slide">Go to slide:</label>
-	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
-	<datalist id="goto-datalist"></datalist>
-	<input type="submit" value="Go">
+    <label for="goto-slide">Go to slide:</label>
+    <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+    <datalist id="goto-datalist"></datalist>
+    <input type="submit" value="Go">
 </form>
 -->
 
@@ -375,9 +375,9 @@ $$
 
 <!-- Initialize the deck. You can put this in an external file if desired. -->
 <script>
-	$(function() {
-		$.deck('.slide');
-	});
+    $(function() {
+        $.deck('.slide');
+    });
 </script>
 
 
