@@ -5,7 +5,7 @@ Here goes a general introduction to the exercise.
 !bsubex
 Predict what this code will do
 
-!bc pycod
+!bc pycod-t
 a = 2
 b = 3
 for i in range(a, b):

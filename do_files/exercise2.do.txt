@@ -27,16 +27,20 @@ plt.show()
 !ec
 
 !esol
+!esubex
+
+!bsubex
 Question without code answer:
 Can you think of an example case that has this difference equation as model?
 
 !bans
-Not really
+Not really.
 !eans
 !esubex
 
 !bsubex
 Another question without code answer.
 !bans
+Nothing to answer...
 !eans
 !esubex
