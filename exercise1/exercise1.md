@@ -75,15 +75,6 @@ x_0 = 20
 \end{equation}
 $$
 
-Question without code answer:
-Can you think of an example case that has this difference equation as model?
-
-
-<!-- --- begin answer of exercise --- -->
-*Answer.*
-Not really
-<!-- --- end answer of exercise --- -->
-
 
 <!-- --- begin solution of exercise --- -->
 *Solution.*
@@ -103,7 +94,23 @@ plt.show()
 <!-- --- end solution of exercise --- -->
 
 *b)*
+Question without code answer:
+Can you think of an example case that has this difference equation as model?
+
+
+<!-- --- begin answer of exercise --- -->
+*Answer.*
+Not really.
+<!-- --- end answer of exercise --- -->
+
+*c)*
 Another question without code answer.
+
+
+<!-- --- begin answer of exercise --- -->
+*Answer.*
+Nothing to answer...
+<!-- --- end answer of exercise --- -->
 
 <!-- --- end exercise --- -->
 
