@@ -11,6 +11,9 @@ Also check out the files as rendered [on github](https://github.com/lexnederbrag
 
 Requires doconce and LaTex to PDF conversion software, as well as [deck2pdf](https://github.com/melix/deck2pdf).
 
+Note that *only* the files `.prepare.sh` and `Makefile` are needed to run `make` in a folder.
+Any edits to doconce files must be done in the `do_files` folder.
+
 # Text
 
 Demonstrates a text with python code, a table and a figure and some math converted to different formats.
