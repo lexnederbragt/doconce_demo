@@ -13,6 +13,7 @@ latex_figs
 *.dlog
 *.ilg
 *.ind
+*.out
 
 tmp_mako*
 tmp_preprocess*
