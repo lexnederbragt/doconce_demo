@@ -9,12 +9,12 @@ Here goes a general introduction to the exercise.
 Predict what this code will do
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.Python}
+~~~{.Python}
 a = 2
 b = 3
 for i in range(a, b):
     print(i)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 <!-- --- begin answer of exercise --- -->
 *Answer.*
@@ -34,21 +34,21 @@ There are many ways to do this. We will show two of them.
 <!-- --- begin solution of exercise --- -->
 *Solution.*
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.Python}
+~~~{.Python}
 a = 2
 b = 5
 for i in range(a, b):
     print(i)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 An alternative:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.Python}
+~~~{.Python}
 a = 1
 b = 4
 for i in range(a, b):
     print(i + 1)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 <!-- --- end solution of exercise --- -->
 
@@ -79,7 +79,7 @@ $$
 <!-- --- begin solution of exercise --- -->
 *Solution.*
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.Python}
+~~~{.Python}
 from matplotlib import pyplot as plt
 x = [20]
 i = 1
@@ -89,7 +89,7 @@ while i < 10:
 
 plt.plot(x)
 plt.show()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 <!-- --- end solution of exercise --- -->
 
