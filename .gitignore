@@ -1,25 +1,63 @@
-latex_figs
-*.aux
-*.exerinfo
-*.idx
-*.loe
-*.p.tex
-*.tdo
-*.toc
-*.pyc
-*-eps-converted-to.pdf
+# from https://doconce.github.io/doconce/doc/pub/manual/manual.html#gitignore
+syntax: glob
+# doconce files:
+*.rst
+*.ipynb
+*.gwiki
+*.cwiki
+*.mwiki
+*.pdf
 *.tex
+automake_sphinx.py
+.*_html_file_collection
+.*.exerinfo
+.*.copyright
+sphinx-rootdir
+Trash
+papers.bib
+# compiled files:
+*.o
+*.so
+*.a
+# temporary files:
+build
+*.bak
+*.swp
+*~
+.*~
+*.old
+tmp*
+temp*
+.#*
+\#*
+# tex files:
 *.log
-*.dlog
+*.dvi
+*.aux
+*.blg
+*.bbl
+*.idx
 *.ilg
 *.ind
+*.loe
+*.nav
 *.out
+*.toc
+*.snm
+*.vrb
+# eclipse files:
+*.cproject
+*.project
+# misc:
+.DS_Store
+.idea
+__pycache__
+_minted-*
 
-tmp_mako*
-tmp_preprocess*
+# additions
 
+*.dlog
 .ipynb_checkpoints/
 ipynb-*-src.tar.gz
 .*_html_file_collection
 *.doconce_figure_cache/
-.DS_Store
