@@ -1,4 +1,6 @@
 * fix references for pdf output
+  - see https://doconce.github.io/doconce/doc/pub/manual/manual.html#do2any:latex:compile3
+* add `--ipynb_cite=latex-plain` for `reference1.ipynb`
 * add rst output
 * code/code1.py and ../data/exp_growth.csv should be dependencies for include1
 * mention use of `make clean && git clean -fdX` to reset a folder?

@@ -1,35 +1,33 @@
 * articles
-** Numerical solution of the Navier-Stokes equations
-   key:      Chorin1968
-   author:   A. J. Chorin
-   year:     1968
-   journal:  Math. Comp.
-   volume:   22
-   pages:    745--762
-   status:   published
+** Numerical Solution of the {Navier-Stokes} Equations
+   key:     Chorin1968
+   author:  A. J. Chorin
+   year:    1968
+   journal: Math. Comp.
+   volume:  22
+   pages:   745--762
+   pdf:     missing
+   status:  published
 * books
 ** Scaling of Differential Equations
    key:       Langtangen_scaling
    author:    H. P. Langtangen, G. K. Pedersen
    year:      2016
    publisher: Springer
-   series:    Simula Springer Brief Series
-   note:      \url{http://tinyurl.com/qfjgxmf/web}
+   pdf:       missing
    url:       http://tinyurl.com/qfjgxmf/web
+   status:    published
    entrytype: book
+   note:      \url{http://tinyurl.com/qfjgxmf/web}
+   series:    Simula Springer Brief Series
 * edited
 ** Automated Solution of Partial Differential Equations by the Finite Element Method
    key:       FEniCS
    author:    A. Logg, K.-A. Mardal, G. N. Wells
    year:      2012
    publisher: Springer
-   entrytype: book
-** The Paraview Guide
-   key:       Paraview
-   author:    A. Henderson Squillacote
-   year:      2007
-   publisher: Kitware
-   url:       http://www.paraview.org/paraview-guide/
+   pdf:       missing
+   status:    published
    entrytype: book
 * proceedings
 ** Parallelizing {PDE} Solvers Using the {Python} Programming Language
@@ -41,10 +39,12 @@
    publisher: Springer
    volume:    51
    pages:     295-325
-   timestamp: 2009.06.06
-   series:    Lecture Notes in Computational Science and Engineering
-   owner:     logg
+   pdf:       missing
+   status:    published
    entrytype: inproceedings
+   owner:     logg
+   series:    Lecture Notes in Computational Science and Engineering
+   timestamp: 2009.06.06
 ** A Case Study in High-Performance Mixed-Language Programming
    key:       Langtangen2007
    author:    H. P. Langtangen
@@ -53,19 +53,31 @@
    booktitle: Applied Parallel Computing -- State of the Art in Scientific Computing
    publisher: Springer
    pages:     36--49
-   timestamp: 2009.06.06
-   series:    Lecture Notes in Computer Science
+   pdf:       missing
+   status:    published
    entrytype: inproceedings
+   series:    Lecture Notes in Computer Science
+   timestamp: 2009.06.06
 * misc
 ** Brief Tutorials on Scientific {Python}
    key:       Langtangen_Hellevik_tutorial
    author:    H. P. Langtangen, L. R. Hellevik
-   status:    published
+   pdf:       missing
    url:       http://hplgit.github.io/bumpy/doc/web/index.html
+   status:    published
    entrytype: misc
 ** The {Oasis Navier-Stokes} Solver
    key:       oasis
    author:    M. Mortensen, K. Valen-Sendstad
-   status:    published
+   pdf:       missing
    url:       https://github.com/mikaem/Oasis
+   status:    published
    entrytype: misc
+** Data Structure Concept of a Dictionary in {P}ython
+   key:       PythonDict
+   pdf:       missing
+   url:       https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg
+   status:    published
+   entrytype: misc
+   note:      \url{https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg}
+   sortkey:   dict

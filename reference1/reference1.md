@@ -42,11 +42,9 @@ time    count
 
 See [figure](#PythonDict) for an illustration that explains the python dictionary concept.
 
-<!-- <img src="../img/PythonDict.jpg" width=400><p><em>Data structure concept of a dictionary in python. <div id="PythonDict"></div></em></p> -->
-![<p><em>Data structure concept of a dictionary in python. <div id="PythonDict"></div></em></p>](../img/PythonDict.jpg)
+<!-- <img src="../img/PythonDict.jpg" width=400><p><em>Data structure concept of a dictionary in python. From [@PythonDict]. <div id="PythonDict"></div></em></p> -->
+![<p><em>Data structure concept of a dictionary in python. From [@PythonDict]. <div id="PythonDict"></div></em></p>](../img/PythonDict.jpg)
 
-The figure was taken
-[from Wikimedia Commons](https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg).
 ### Math
 
 Now we add some mathematical formula:
@@ -66,10 +64,12 @@ $$
     Springer,
     2006.
  2. <div id="Chorin1968"></div> **A. J. Chorin**. 
-    Numerical solution of the Navier-Stokes equations,
+    Numerical Solution of the Navier-Stokes Equations,
     *Math. Comp.*,
     22,
     pp. 745-762,
     1968.
+ 3. <div id="PythonDict"></div> Data Structure Concept of a Dictionary in Python. 
+    <https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg>.
 
 

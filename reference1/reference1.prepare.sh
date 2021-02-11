@@ -14,7 +14,8 @@ cat ../do_files/table1.do.txt
 echo
 echo "===== Figure ====="
 echo
-cat ../do_files/figure1.do.txt
+cat ../do_files/figure2_cite.do.txt
+echo
 echo "===== Math ====="
 echo
 cat ../do_files/math1.do.txt
