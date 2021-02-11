@@ -5,10 +5,15 @@ doconce format html reference1.do.txt
 
 # Building pdf
 doconce format pdflatex reference1.do.txt --latex_code_style=vrb --execute && \
-	pdflatex reference1.tex
+	pdflatex reference1 && \
+	pdflatex reference1 && \
+	makeindex reference1 && \
+	bibtex reference1 && \
+	pdflatex reference1
 
 # Building jupyter notebook
-doconce format ipynb reference1.do.txt --execute
+doconce format ipynb reference1.do.txt --execute \
+	--ipynb_cite=latex-plain
 
 # Building markdown
 doconce format markdown reference1.do.txt
