@@ -12,10 +12,6 @@ for number in range(10):
 print(total)
 ~~~
 
-~~~
-55
-~~~
-
 ### Explanation
 
 Let's explain some of this code

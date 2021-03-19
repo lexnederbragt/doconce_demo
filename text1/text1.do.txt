@@ -11,10 +11,6 @@ for number in range(10):
 print(total)
 !ec
 
-!bc pyout
-55
-!ec
-
 ===== Explanation =====
 
 Let's explain some of this code

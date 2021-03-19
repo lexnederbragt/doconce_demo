@@ -3,7 +3,3 @@ Here is some plain text.
 Now we add some python code with output:
 
 @@@CODE ../code/code1.py
-
-!bc pyout
-55
-!ec
