@@ -14,8 +14,21 @@ for number in range(10):
 print(total)
 ~~~
 
+And some data
+
+
 ~~~
-55
+time,count
+60,10000
+90,25587
+120,76327
+150,212715
+180,619511
+210,1940838
+240,4240760
+270,13993730
+300,38971086
+330,105614040
 ~~~
 
 ### Explanation
@@ -38,8 +51,6 @@ Goes through numbers 0 to 9 and adds 1 more than each number to the `total` vari
 The data on exponential growth can be found in the table below.
 
 
-
-
 time    count    
 ----  ---------  
  60     10000    
@@ -52,8 +63,6 @@ time    count
 270    13993730  
 300    38971086  
 330   105614040  
-
-
 
 
 ### Figure

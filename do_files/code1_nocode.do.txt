@@ -3,3 +3,7 @@ Here is some plain text.
 Now we add some python code with output:
 
 @@@CODE ../code/code1.py
+
+And some data
+
+@@@CODE ../data/exp_growth.csv
