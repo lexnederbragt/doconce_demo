@@ -17,10 +17,6 @@ for number in range(10):
 print(total)
 !ec
 
-!bc pyout
-55
-!ec
-
 !split
 
 ===== Explanation =====
@@ -77,3 +73,23 @@ Now we add some mathematical formula:
 K_n = rwTK_{n-1}\left (1 - \frac{K_{n-1}}{H}\right ) - K_{n-1}.
 \end{equation*}
 !et
+!split
+===== Slidecells =====
+
+Here we use a two by two grid for content
+
+!bslidecell 00
+Top left cell
+!eslidecell
+
+!bslidecell 01
+Top right cell
+!eslidecell
+
+!bslidecell 10
+Bottom left cell
+!eslidecell
+
+!bslidecell 11
+Bottom right cell
+!eslidecell

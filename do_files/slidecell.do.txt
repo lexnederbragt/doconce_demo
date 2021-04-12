@@ -1,0 +1,17 @@
+Here we use a two by two grid for content
+
+!bslidecell 00
+Top left cell
+!eslidecell
+
+!bslidecell 01
+Top right cell
+!eslidecell
+
+!bslidecell 10
+Bottom left cell
+!eslidecell
+
+!bslidecell 11
+Bottom right cell
+!eslidecell

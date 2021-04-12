@@ -28,3 +28,7 @@ echo
 echo "===== Math ====="
 echo
 cat ../do_files/math1.do.txt
+echo "!split"
+echo "===== Slidecells ====="
+echo
+cat ../do_files/slidecell.do.txt
