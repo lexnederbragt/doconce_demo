@@ -1,15 +1,16 @@
+<!--
+HTML file automatically generated from DocOnce source
+(https://github.com/doconce/doconce/)
+doconce format html slide1.reveal.html slide1.reveal reveal --html_slide_theme=beige
+-->
 <!DOCTYPE html>
-
+<html>
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="DocOnce: https://github.com/doconce/doconce/" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Minimal slide demo">
-
 <title>Minimal slide demo</title>
-
-
-
-
 
 
 
@@ -85,6 +86,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 
 
 
+
 <!-- Styles for table layout of slides -->
 <style type="text/css">
 td.padding {
@@ -96,6 +98,7 @@ td.padding {
 </style>
 
 </head>
+
 
 <body>
 <div class="reveal">
@@ -123,87 +126,97 @@ MathJax.Hub.Config({
 
 
 
-    
-
 
 
 <section>
 <!-- ------------------- main content ---------------------- -->
+<center>
+<h1 style="text-align: center;">Minimal slide demo</h1>
+</center>  <!-- document title -->
 
-
-
-<center><h1 style="text-align: center;">Minimal slide demo</h1></center>  <!-- document title -->
-
-<p>
 <!-- author(s): Lex Nederbragt -->
-
 <center>
 <b>Lex Nederbragt</b> 
 </center>
-
-<p>&nbsp;<br>
 <!-- institution(s) -->
-
 <br>
-<p>&nbsp;<br>
-<center><h4>Jan 6, 2021</h4></center> <!-- date -->
+<center>
+<h4>Apr 12, 2021</h4>
+</center> <!-- date -->
 <br>
 </section>
 
 
 <section>
-<h2 id="___sec0">Plain text </h2>
+<h2 id="plain-text">Plain text </h2>
 
-<p>
-Here is some plain text.
+<p>Here is some plain text.</p>
 
-<p>
-Now we add some python code with output:
+<p>Now we add some python code with output:</p>
 
-<p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span>total = <span style="color: #B452CD">0</span>
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #eeeedd">
+  <pre style="font-size: 80%; line-height: 125%;">total = <span style="color: #B452CD">0</span>
 <span style="color: #8B008B; font-weight: bold">for</span> number <span style="color: #8B008B">in</span> <span style="color: #658b00">range</span>(<span style="color: #B452CD">10</span>):
    total = total + (number + <span style="color: #B452CD">1</span>)
 <span style="color: #658b00">print</span>(total)
-</pre></div>
-<p>
-
-<!-- code=text (!bc pyout) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span>55
-</pre></div>
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+<pre>
+55
+</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
 
 
 <section>
-<h2 id="___sec1">Explanation </h2>
+<h2 id="explanation">Explanation </h2>
 
-<p>
-Let's explain some of this code
-(setting the code to be unexecutable):
+<p>Let's explain some of this code (setting the code to be unexecutable):</p>
 
-<p>
-The <code>for</code> loop:
+<p>The <code>for</code> loop:</p>
 
-<p>
 
-<!-- code=text (!bc pycod -t) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span>for number in range(10):
-   total = total + (number + 1)
-</pre></div>
-<p>
-Goes through numbers 0 to 9 and adds 1 more than each number to the <code>total</code> variable.
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc-t" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #eeeedd">
+  <pre style="font-size: 80%; line-height: 125%;"><span style="color: #8B008B; font-weight: bold">for</span> number <span style="color: #8B008B">in</span> <span style="color: #658b00">range</span>(<span style="color: #B452CD">10</span>):
+   total = total + (number + <span style="color: #B452CD">1</span>)
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>Goes through numbers 0 to 9 and adds 1 more than each number to the <code>total</code> variable.</p>
 </section>
 
 
 <section>
-<h2 id="___sec2">Table </h2>
+<h2 id="table">Table </h2>
 
-<p>
-The data on exponential growth can be found in the table below.
+<p>The data on exponential growth can be found in the table below.</p>
 
-<p>
 <table border="1">
 <thead>
 <tr><th align="center">time</th> <th align="center">  count  </th> </tr>
@@ -225,29 +238,26 @@ The data on exponential growth can be found in the table below.
 
 
 <section>
-<h2 id="___sec3">Figure </h2>
+<h2 id="figure">Figure </h2>
 
-<p>
-See figure <a href="#PythonDict">1</a> for an illustration that explains the python dictionary concept.
+<p>See figure <a href="#PythonDict">1</a> for an illustration that explains the python dictionary concept.</p>
 
-<p>
 <center> <!-- figure label: --> <div id="PythonDict"></div> <!-- FIGURE -->
 <hr class="figure">
-<center><p class="caption">Figure 1:  Data structure concept of a dictionary in python.  <!-- caption label: PythonDict --> </p></center>
+<center>
+<p class="caption">Figure 1:  Data structure concept of a dictionary in python.  <!-- caption label: PythonDict --> </p>
+</center>
 <p><img src="../img/PythonDict.jpg" align="bottom" width=400></p>
 </center>
 
-<p>
-The figure was taken
-<a href="https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg" target="_self">from Wikimedia Commons</a>.
+<p>The figure was taken <a href="https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg" target="_self">from Wikimedia Commons</a>.</p>
 </section>
 
 
 <section>
-<h2 id="___sec4">Math </h2>
+<h2 id="math">Math </h2>
 
-<p>
-Now we add some mathematical formula:
+<p>Now we add some mathematical formula:</p>
 
 <p>&nbsp;<br>
 $$
@@ -256,6 +266,33 @@ K_n = rwTK_{n-1}\left (1 - \frac{K_{n-1}}{H}\right ) - K_{n-1}.
 \end{equation*}
 $$
 <p>&nbsp;<br>
+</section>
+
+
+<section>
+<h2 id="slidecells">Slidecells </h2>
+
+<p>Here we use a two by two grid for content</p>
+
+
+<table border="0">
+<tr>
+<td class="padding">
+<p>Top left cell</p>
+</td>
+<td class="padding">
+<p>Top right cell</p>
+</td>
+</tr>
+<tr>
+<td class="padding">
+<p>Bottom left cell</p>
+</td>
+<td class="padding">
+<p>Bottom right cell</p>
+</td>
+</tr>
+</table>
 </section>
 
 
@@ -398,6 +435,7 @@ Reveal.initialize({
 <img src="somelogo.png">
 </div>
      end footer logo -->
+
 
 
 

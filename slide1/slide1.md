@@ -1,6 +1,6 @@
 % Minimal slide demo
 % **Lex Nederbragt**
-% Jan 25, 2021
+% Apr 12, 2021
 
 <!-- !split -->
 
@@ -18,10 +18,6 @@ for number in range(10):
 print(total)
 ~~~
 
-~~~
-55
-~~~
-
 <!-- !split -->
 
 ### Explanation
@@ -32,7 +28,7 @@ Let's explain some of this code
 The `for` loop:
 
 
-~~~
+~~~{.Python}
 for number in range(10):
    total = total + (number + 1)
 ~~~
@@ -80,4 +76,24 @@ $$
 K_n = rwTK_{n-1}\left (1 - \frac{K_{n-1}}{H}\right ) - K_{n-1}.
 
 $$
+<!-- !split -->
+### Slidecells
+
+Here we use a two by two grid for content
+
+<!-- !bslidecell 00 -->
+Top left cell
+<!-- !eslidecell -->
+
+<!-- !bslidecell 01 -->
+Top right cell
+<!-- !eslidecell -->
+
+<!-- !bslidecell 10 -->
+Bottom left cell
+<!-- !eslidecell -->
+
+<!-- !bslidecell 11 -->
+Bottom right cell
+<!-- !eslidecell -->
 
