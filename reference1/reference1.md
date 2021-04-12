@@ -12,7 +12,7 @@ Let's explain some of this code
 The `for` loop:
 
 
-~~~
+~~~{.Python}
 for number in range(10):
    total = total + (number + 1)
 ~~~
@@ -57,19 +57,8 @@ $$
 
 ### References
 
- 1. <div id="CaiLangtangen2006"></div> **X. Cai and H. P. Langtangen**. 
-    Parallelizing PDE Solvers Using the Python Programming Language,
-    *Numerical Solution of Partial Differential Equations on Parallel 	Computers*,
-    edited by **A. M. Bruaset and A. Tveito**,
-    Springer,
-    2006.
- 2. <div id="Chorin1968"></div> **A. J. Chorin**. 
-    Numerical Solution of the Navier-Stokes Equations,
-    *Math. Comp.*,
-    22,
-    pp. 745-762,
-    1968.
- 3. <div id="PythonDict"></div> Data Structure Concept of a Dictionary in Python. 
-    <https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg>.
+ 1. <div id="CaiLangtangen2006"></div> **X. Cai and H. P. Langtangen**.  Parallelizing PDE Solvers Using the Python Programming Language, *Numerical Solution of Partial Differential Equations on Parallel 	Computers*, edited by **A. M. Bruaset and A. Tveito**, Springer, 2006.
+ 2. <div id="Chorin1968"></div> **A. J. Chorin**.  Numerical Solution of the Navier-Stokes Equations, *Math. Comp.*, 22, pp. 745-762, 1968.
+ 3. <div id="PythonDict"></div> Data Structure Concept of a Dictionary in Python.  <https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg>.
 
 

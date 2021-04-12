@@ -20,7 +20,7 @@ Let's explain some of this code
 The `for` loop:
 
 
-~~~
+~~~{.Python}
 for number in range(10):
    total = total + (number + 1)
 ~~~

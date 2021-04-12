@@ -1,22 +1,16 @@
 <!--
-Automatically generated HTML file from DocOnce source
+HTML file automatically generated from DocOnce source
 (https://github.com/doconce/doconce/)
+doconce format html reference1.do.txt --execute
 -->
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="DocOnce: https://github.com/doconce/doconce/" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 <title></title>
-
-
 <style type="text/css">
 /* blueish style */
-
-/* Color definitions:  https://www.december.com/html/spec/color0.html
-   CSS examples:       https://www.w3schools.com/css/css_examples.asp */
-
 body {
   margin-top: 1.0em;
   background-color: #ffffff;
@@ -26,18 +20,98 @@ body {
 h1 { font-size: 1.8em; color: #1e36ce; }
 h2 { font-size: 1.6em; color: #1e36ce; }
 h3 { font-size: 1.4em; color: #1e36ce; }
+h4 { font-size: 1.2em; color: #1e36ce; }
 a { color: #1e36ce; text-decoration:none; }
 tt { font-family: "Courier New", Courier; }
-/* pre style removed because it will interfer with pygments */
 p { text-indent: 0px; }
 hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
 p.caption { width: 80%; font-style: normal; text-align: left; }
-hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-
+hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
+/* pre style removed because it will interfer with pygments */
+div.highlight {
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+    line-height: 1.21429em;
+}
+div.cell {
+    width: 100%;
+    padding: 5px 5px 5px 0;
+    margin: 0;
+    outline: none;
+}
+div.input {
+    page-break-inside: avoid;
+    box-orient: horizontal;
+    box-align: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+div.inner_cell {
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-flex: 1;
+    flex: 1;
+}
+div.input_area {
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    background: #f7f7f7;
+    line-height: 1.21429em;
+}
+div.input_area > div.highlight {
+    margin: .4em;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+div.output_wrapper {
+    position: relative;
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.output {
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+div.output_area {
+    padding: 0;
+    page-break-inside: avoid;
+    box-orient: horizontal;
+    box-align: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+div.output_subarea {
+    padding: .4em .4em 0 .4em;
+    box-flex: 1;
+    flex: 1;
+}
+div.output_text {
+    text-align: left;
+    color: #000;
+    line-height: 1.21429em;
+}
 div { text-align: justify; text-justify: inter-word; }
+.tab {
+  padding-left: 1.5em;
+}
+div.toc p,a {
+  line-height: 1.3;
+  margin-top: 1.1;
+  margin-bottom: 1.1;
+}
 </style>
-
-
 </head>
 
 <!-- tocinfo
@@ -67,45 +141,39 @@ MathJax.Hub.Config({
 </script>
 
 
-
-    
 <!-- ------------------- main content ---------------------- -->
 <h2 id="plain-text">Plain text </h2>
 
-<p></p>
-Here is some plain text.
+<p>Here is some plain text.</p>
 
-<p></p>
-Now we add a citation: a Langtangen book <a href="#CaiLangtangen2006">[1]</a>. And a paper <a href="#Chorin1968">[2]</a>.
-
-<p></p>
+<p>Now we add a citation: a Langtangen book <a href="#CaiLangtangen2006">[1]</a>. And a paper <a href="#Chorin1968">[2]</a>.</p>
 <h2 id="explanation">Explanation </h2>
 
-<p></p>
-Let's explain some of this code
-(setting the code to be unexecutable):
+<p>Let's explain some of this code (setting the code to be unexecutable):</p>
 
-<p></p>
-The <code>for</code> loop:
-
-<p></p>
+<p>The <code>for</code> loop:</p>
 
 
-<!-- code=text (!bc pycod -t) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>for number in range(10):
-   total = total + (number + 1)
-</pre></div>
+<!-- code=python (!bc pycod) typeset with pygments style "default-t" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;"><span style="color: #008000; font-weight: bold">for</span> number <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #666666">10</span>):
+   total <span style="color: #666666">=</span> total <span style="color: #666666">+</span> (number <span style="color: #666666">+</span> <span style="color: #666666">1</span>)
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p></p>
-Goes through numbers 0 to 9 and adds 1 more than each number to the <code>total</code> variable.
-
-<p></p>
+<p>Goes through numbers 0 to 9 and adds 1 more than each number to the <code>total</code> variable.</p>
 <h2 id="table">Table </h2>
 
-<p></p>
-The data on exponential growth can be found in the table below.
+<p>The data on exponential growth can be found in the table below.</p>
 
-<p></p>
 <table border="1">
 <thead>
 <tr><th align="center">time</th> <th align="center">  count  </th> </tr>
@@ -123,13 +191,10 @@ The data on exponential growth can be found in the table below.
 <tr><td align="center">   330     </td> <td align="center">   105614040    </td> </tr>
 </tbody>
 </table>
-<p></p>
 <h2 id="figure">Figure </h2>
 
-<p></p>
-See figure <a href="#PythonDict">1</a> for an illustration that explains the python dictionary concept.
+<p>See figure <a href="#PythonDict">1</a> for an illustration that explains the python dictionary concept.</p>
 
-<p></p>
 <center> <!-- figure label: --> <div id="PythonDict"></div> <!-- FIGURE -->
 <hr class="figure">
 <center>
@@ -138,47 +203,25 @@ See figure <a href="#PythonDict">1</a> for an illustration that explains the pyt
 <p><img src="../img/PythonDict.jpg" align="bottom" width=400></p>
 </center>
 
-<p></p>
 <h2 id="math">Math </h2>
 
-<p></p>
-Now we add some mathematical formula:
+<p>Now we add some mathematical formula:</p>
 
-<p></p>
 $$
 \begin{equation*}
 K_n = rwTK_{n-1}\left (1 - \frac{K_{n-1}}{H}\right ) - K_{n-1}.
 \end{equation*}
 $$
-
-<p></p>
 <h2 id="references">References </h2>
 
-<p></p>
 <!-- begin bibliography -->
-
 <ol>
- <li> <div id="CaiLangtangen2006"></div> <b>X. Cai and H. P. Langtangen</b>. 
-    Parallelizing PDE Solvers Using the Python Programming Language,
-    <em>Numerical Solution of Partial Differential Equations on Parallel 	Computers</em>,
-    edited by <b>A. M. Bruaset and A. Tveito</b>,
-    Springer,
-    2006.</li>
- <li> <div id="Chorin1968"></div> <b>A. J. Chorin</b>. 
-    Numerical Solution of the Navier-Stokes Equations,
-    <em>Math. Comp.</em>,
-    22,
-    pp. 745-762,
-    1968.</li>
- <li> <div id="PythonDict"></div> Data Structure Concept of a Dictionary in Python. 
-    <a href="https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg" target="_self"><tt>https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg</tt></a>.</li>
+ <li> <div id="CaiLangtangen2006"></div> <b>X. Cai and H. P. Langtangen</b>.  Parallelizing PDE Solvers Using the Python Programming Language, <em>Numerical Solution of Partial Differential Equations on Parallel 	Computers</em>, edited by <b>A. M. Bruaset and A. Tveito</b>, Springer, 2006.</li>
+ <li> <div id="Chorin1968"></div> <b>A. J. Chorin</b>.  Numerical Solution of the Navier-Stokes Equations, <em>Math. Comp.</em>, 22, pp. 745-762, 1968.</li>
+ <li> <div id="PythonDict"></div> Data Structure Concept of a Dictionary in Python.  <a href="https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg" target="_self"><tt>https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg</tt></a>.</li>
 </ol>
-
 <!-- end bibliography -->
-
 <!-- ------------------- end of main content --------------- -->
-
-
 </body>
 </html>
     

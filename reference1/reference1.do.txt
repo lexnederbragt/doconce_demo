@@ -11,7 +11,7 @@ Let's explain some of this code
 
 The `for` loop:
 
-!bc pycod -t
+!bc pycod-t
 for number in range(10):
    total = total + (number + 1)
 !ec
