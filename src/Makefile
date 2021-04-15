@@ -16,7 +16,7 @@ test:
 	@echo TARGETS: ${TARGETS}
 
 # Building up the doconce file by adding successive doconce files
-text1.do.txt : ../scripts/text1.prepare.sh ${DO_FILES}
+%.do.txt : ../scripts/%.prepare.sh ${DO_FILES}
 	source $< > $@
 
 # commands used
