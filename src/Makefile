@@ -34,20 +34,24 @@ text1.do.txt : ../scripts/text1.prepare.sh ${DO_FILES}
 	mv $*.html $@
 
 # pdf
+# remove latex files (.tex, .aux, etc) afterwards
 ../pub/%.pdf : %.do.txt
 	# Building pdf
 	doconce format pdflatex $< --latex_code_style=vrb --execute && \
 	pdflatex $*.tex && \
-	mv $*.pdf $@
+	mv $*.pdf $@ && \
+	doconce clean
 
 # jupyter notebook for exercises with and without answers and solutions
+# remove ipynb-*-src.tar.gz file afterwards
 ../pub/exercise%.ipynb : exercise%.do.txt
 	# Building jupyter notebook for exercises with answers and solutions
 	doconce format ipynb $< --execute && \
 	mv $*.ipynb ../pub/exercise$*-solutions.ipynb
 	# Building jupyter notebook for exercises without answers and solutions
 	doconce format ipynb $< --execute --without_solutions --without_answers && \
-	mv $*.ipynb $@
+	mv $*.ipynb $@ && \
+	doconce clean
 
 # all other jupyter notebooks
 ../pub/%.ipynb : %.do.txt
