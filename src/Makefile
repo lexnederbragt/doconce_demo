@@ -1,19 +1,39 @@
-BASENAME   := text1
-DO_FILES   := $(shell grep -o do_files\/.*do.txt ../scripts/${BASENAME}.prepare.sh)
-DO_IN      := $(addsuffix .do.txt, ${BASENAME})
+WHAT   := text1 reference1 exercise1 slide1 include1
+# currently, choosing all do_files/*.do.txt, which is not optimal
+DO_FILES   := $(shell ls do_files/*.do.txt)
+DO_IN      := $(addsuffix .do.txt, ${WHAT})
 EXTENSIONS := .html .pdf .ipynb .md
-COMMANDS   := $(addsuffix .compile.sh, ${BASENAME})
-TARGETS    := $(addprefix ../pub/${BASENAME}, ${EXTENSIONS} )
+COMMANDS   := $(addsuffix .compile.sh, ${WHAT})
+# common targets
+TARGETS    := $(addsuffix .html, ${WHAT})
+TARGETS    += $(addsuffix .pdf, ${WHAT})
+TARGETS    += $(addsuffix .ipynb, ${WHAT})
+TARGETS    += $(addsuffix .md, ${WHAT})
+TARGETS    := $(addprefix ../pub/, ${TARGETS})
+
+# targets specific for slides
+TARGETS_SLIDE += $(addsuffix .deck.html, slide1)
+TARGETS_SLIDE += $(addsuffix .reveal.html, slide1)
+TARGETS_SLIDE += $(addsuffix .deck.pdf, slide1)
+TARGETS_SLIDE += $(addsuffix .reveal.pdf, slide1)
+TARGETS_SLIDE := $(addprefix ../pub/, ${TARGETS_SLIDE})
 
 .PHONY : all test clean cleanall
 
-all : ${DO_IN} ${TARGETS} ${COMMANDS}
+all : ${DO_IN} ${TARGETS} ${COMMANDS} ${TARGETS_SLIDE}
 
 test:
 	@echo DO_FILES: ${DO_FILES}
 	@echo DO_IN: ${DO_IN}
 	@echo COMMANDS: ${COMMANDS}
 	@echo TARGETS: ${TARGETS}
+	@echo TARGETS_SLIDE: ${TARGETS_SLIDE}
+
+text1:
+	$(filter text1, ${TARGETS})
+
+reference1:
+	echo $(filter reference1, ${TARGETS})
 
 # Building up the doconce file by adding successive doconce files
 %.do.txt : ../scripts/%.prepare.sh ${DO_FILES}
@@ -66,42 +86,42 @@ test:
 	mv $*.md $@
 
 # reveal.js slides
-../pub/%.reveal.html : %.do.txt
+../pub/slide%.reveal.html : slide%.do.txt
 	# Building reveal.js slides
-	doconce format html $< --html_output=$*.reveal --pygments_html_style=perldoc \
+	doconce format html $< --html_output=slide$*.reveal --pygments_html_style=perldoc \
 	    --keep_pygments_html_bg SLIDE_TYPE=reveal SLIDE_THEME=beige \
 		--skip_inline_comments --execute \
-	&& doconce slides_html $*.reveal reveal --html_slide_theme=beige && \
-	mv $*.reveal.html $@
+	&& doconce slides_html slide$*.reveal reveal --html_slide_theme=beige && \
+	mv slide$*.reveal.html $@ && \
+	rsync -a reveal.js ../pub/ && rm -r reveal.js
 
 
 # reveal.js PDF
-../pub/%.reveal.pdf : %.reveal.html
+../pub/%.reveal.pdf : ../pub/%.reveal.html
 	# Building PDF of reveal.js slides
-	deck2pdf --profile=revealjs $< $@ && \
-	mv $*.reveal.pdf $@
+	deck2pdf --profile=revealjs $< $@
 
 # deck.js slides
-../pub/%.deck.html : %.do.txt
+../pub/slide%.deck.html : slide%.do.txt
 	# Building deck.js slides
-	doconce format html $< --html_output=$*.deck --pygments_html_style=autumn \
+	doconce format html $< --html_output=slide$*.deck --pygments_html_style=autumn \
 	--keep_pygments_html_bg SLIDE_TYPE=reveal SLIDE_THEME=swiss \
 	--skip_inline_comments --execute \
-	&& doconce slides_html $*.deck deck --html_slide_theme=swiss && \
-	mv $*.deck.html $@
+	&& doconce slides_html slide$*.deck deck --html_slide_theme=swiss && \
+	mv slide$*.deck.html $@ && \
+	rsync -a deck.js-latest ../pub/ && rm -r deck.js-latest
 
 # deck.js PDF
-../pub/%.deck.pdf : %.deck.html
+../pub/%.deck.pdf : ../pub/%.deck.html
 	# Building PDF of deck.js slides
 	deck2pdf  --profile=deckjs $< $@
-	mv $*.deck.pdf $@
 
 # remove targets
 clean :
-	rm ${TARGETS}
+	-rm ${TARGETS}
 
 # remove targets, .compile.sh .do.txt files and files doconce can recreate
 # use with care
 cleanall :
 	doconce clean
-	rm ${DO_IN} ${COMMANDS} ${TARGETS}
+	-rm ${DO_IN} ${COMMANDS} ${TARGETS} ${TARGETS_SLIDE}
