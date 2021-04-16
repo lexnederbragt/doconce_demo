@@ -11,8 +11,7 @@
 * references no longer work in ipynb?
 * change ../img/file.png to img/file.png an d make symlink to img folder in src and pub folders?
   - also add to documentation
-* change *.compile.sh  back to *.commands.sh
-* doconce clean removes *.commands and *.compile.sh. How to fix?
+* doconce clean removes *.commands.sh. How to fix?
 * adjust readme with new structure
   - add `make clean`, `make cleanall`
   - add `make -n | grep Target`
