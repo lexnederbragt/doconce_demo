@@ -43,7 +43,7 @@ reference1:
 # $shell(grep do_files ../scripts/text1.prepare.sh | cut -c 5-)
 %.do.txt : ../scripts/%.prepare.sh ${DO_FILES}
 	# Target: $@
-	source $< > $@
+	sh $< > $@
 
 # commands used
 # use the '--what-if' option to show
