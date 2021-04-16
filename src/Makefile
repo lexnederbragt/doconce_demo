@@ -14,11 +14,14 @@ TARGETS    := $(addprefix ../pub/, ${TARGETS})
 # targets specific for slides
 TARGETS_SLIDE += $(addsuffix .deck.html, slide1)
 TARGETS_SLIDE += $(addsuffix .reveal.html, slide1)
-TARGETS_SLIDE += $(addsuffix .deck.pdf, slide1)
-TARGETS_SLIDE += $(addsuffix .reveal.pdf, slide1)
 TARGETS_SLIDE := $(addprefix ../pub/, ${TARGETS_SLIDE})
 
-.PHONY : all test clean cleanall
+# PDFs of slides (exclude from Github Actions)
+SLIDE_PDF := $(addsuffix .deck.pdf, slide1)
+SLIDE_PDF += $(addsuffix .reveal.pdf, slide1)
+SLIDE_PDF := $(addprefix ../pub/, ${SLIDE_PDF})
+
+.PHONY : all test pdf clean cleanall
 
 all : ${DO_IN} ${TARGETS} ${COMMANDS} ${TARGETS_SLIDE}
 
@@ -28,15 +31,9 @@ test:
 	@echo COMMANDS: ${COMMANDS}
 	@echo TARGETS: ${TARGETS}
 	@echo TARGETS_SLIDE: ${TARGETS_SLIDE}
+	@echo SLIDE_PDF: ${SLIDE_PDF}
 
-# does this work?
-text1:
-	$(filter text1, ${TARGETS})
-
-# does this work?
-reference1:
-	echo $(filter reference1, ${TARGETS})
-
+pdf: ${SLIDE_PDF}
 
 # Building up the doconce file by adding successive doconce files
 # grep do_files ../scripts/text1.prepare.sh | cut -c 5-
@@ -142,6 +139,7 @@ clean :
 # Start of slide specific commands
 ifneq (,$(findstring slide,${WHAT}))
 	-rm ${TARGETS_SLIDE}
+	-rm ${SLIDE_PDF}
 # End of slide specific commands
 endif
 
@@ -149,4 +147,4 @@ endif
 # use with care
 cleanall :
 	doconce clean
-	-rm ${DO_IN} ${COMMANDS} ${TARGETS} ${TARGETS_SLIDE}
+	-rm ${DO_IN} ${COMMANDS} ${TARGETS} ${TARGETS_SLIDE} ${SLIDE_PDF}
