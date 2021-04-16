@@ -1,4 +1,4 @@
-name: compile_exercises
+name: compile_demos
 on: [push, pull_request]
 jobs:
   make_exercises:
@@ -8,6 +8,6 @@ jobs:
       - uses: docker://lexnederbragt/doconce_e9ce172:latest
       - run: docker pull lexnederbragt/doconce_e9ce172
 # use doconce with commit e9ce172 from April 11, 2021
-      - run: docker run -v $(pwd):/app -t lexnederbragt/doconce_e9ce172 /bin/bash -c "source activate doconce && cd src && make cleanall && make"
+      - run: docker run -v $(pwd):/app -t lexnederbragt/doconce_e9ce172 /bin/bash -c "source activate doconce && cd /app && cd src && make cleanall && make"
 # update doconce to the very latest
-      - run: docker run -v $(pwd):/app -t lexnederbragt/doconce_e9ce172 /bin/bash -c "source activate doconce && cd doconce && git pull && python setup.py install && cd /app/src && make cleanall && make"
+      - run: docker run -v $(pwd):/app -t lexnederbragt/doconce_e9ce172 /bin/bash -c "source activate doconce && cd doconce && git pull && python setup.py install && cd /app && cd src && make cleanall && make"
