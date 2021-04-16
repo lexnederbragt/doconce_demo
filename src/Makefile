@@ -29,13 +29,18 @@ test:
 	@echo TARGETS: ${TARGETS}
 	@echo TARGETS_SLIDE: ${TARGETS_SLIDE}
 
+# does this work?
 text1:
 	$(filter text1, ${TARGETS})
 
+# does this work?
 reference1:
 	echo $(filter reference1, ${TARGETS})
 
+
 # Building up the doconce file by adding successive doconce files
+# grep do_files ../scripts/text1.prepare.sh | cut -c 5-
+# $shell(grep do_files ../scripts/text1.prepare.sh | cut -c 5-)
 %.do.txt : ../scripts/%.prepare.sh ${DO_FILES}
 	source $< > $@
 
@@ -85,6 +90,9 @@ reference1:
 	doconce format markdown $< && \
 	mv $*.md $@
 
+# Start of slide specific commands
+ifneq (,$(findstring slide,${WHAT}))
+
 # reveal.js slides
 ../pub/slide%.reveal.html : slide%.do.txt
 	# Building reveal.js slides
@@ -116,9 +124,18 @@ reference1:
 	# Building PDF of deck.js slides
 	deck2pdf  --profile=deckjs $< $@
 
+# End of slide specific commands
+endif
+
+
 # remove targets
 clean :
 	-rm ${TARGETS}
+# Start of slide specific commands
+ifneq (,$(findstring slide,${WHAT}))
+	-rm ${TARGETS_SLIDE}
+# End of slide specific commands
+endif
 
 # remove targets, .compile.sh .do.txt files and files doconce can recreate
 # use with care
