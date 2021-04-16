@@ -71,10 +71,10 @@ reference1:
 ../pub/exercise%.ipynb : exercise%.do.txt
 	# Building jupyter notebook for exercises with answers and solutions
 	doconce format ipynb $< --execute && \
-	mv $*.ipynb ../pub/exercise$*-solutions.ipynb
+	mv exercise$*.ipynb ../pub/exercise$*-solutions.ipynb
 	# Building jupyter notebook for exercises without answers and solutions
 	doconce format ipynb $< --execute --without_solutions --without_answers && \
-	mv $*.ipynb $@
+	mv exercise$*.ipynb $@
 
 # all other jupyter notebooks
 ../pub/%.ipynb : %.do.txt

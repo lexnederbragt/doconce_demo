@@ -4,7 +4,6 @@
 
 Here goes a general introduction to the exercise.
 
-
 *a)*
 Predict what this code will do
 
@@ -24,12 +23,10 @@ Prints `2`
 *b)*
 Modify the program so that it prints 2, 3 and 4.
 
-
 <!-- --- begin answer of exercise --- -->
 *Answer.*
 There are many ways to do this. We will show two of them.
 <!-- --- end answer of exercise --- -->
-
 
 <!-- --- begin solution of exercise --- -->
 *Solution.*
@@ -54,15 +51,11 @@ for i in range(a, b):
 
 <!-- --- end exercise --- -->
 
-
-
-
 <!-- --- begin exercise --- -->
 
 ### Exercise 2: my second exercise
 
 Here goes a general introduction to the exercise.
-
 
 *a)*
 Implement this difference equation in Python
@@ -74,7 +67,6 @@ x_{n+1} = 1.5 x_n -20
 x_0 = 20
 \end{equation}
 $$
-
 
 <!-- --- begin solution of exercise --- -->
 *Solution.*
@@ -97,7 +89,6 @@ plt.show()
 Question without code answer:
 Can you think of an example case that has this difference equation as model?
 
-
 <!-- --- begin answer of exercise --- -->
 *Answer.*
 Not really.
@@ -105,7 +96,6 @@ Not really.
 
 *c)*
 Another question without code answer.
-
 
 <!-- --- begin answer of exercise --- -->
 *Answer.*
