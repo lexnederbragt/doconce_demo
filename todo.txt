@@ -9,8 +9,6 @@
     and putting these in a do_dependencies.mk file
   - reuse `DO_FILES   := $(shell grep -o do_files\/.*do.txt ../scripts/${BASENAME}.prepare.sh)`
 * references no longer work in ipynb?
-* change ../img/file.png to img/file.png an d make symlink to img folder in src and pub folders?
-  - also add to documentation
 * doconce clean removes *.commands.sh. How to fix?
 * add rst output
 * code/code1.py and ../data/exp_growth.csv should be dependencies for include1
