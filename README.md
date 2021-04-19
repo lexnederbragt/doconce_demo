@@ -33,7 +33,7 @@ Demonstrates a text with Python code, a table and a figure and some math, conver
 
 |Subject|DocOnce|commands|html|pdf|ipynb|markdown|
 |-------|-------|--------|----|---|-----|--------|
-|Text|[DocOnce](pub/text1.do.txt)|[commands](pub/text1.commands.sh)|[html](pub/text1.html)|[pdf](pub/text1.pdf)|[ipynb](pub/text1.ipynb)|[markdown](pub/text1.md)|
+|Text|[DocOnce](src/text1.do.txt)|[commands](pub/text1.commands.sh)|[html](pub/text1.html)|[pdf](pub/text1.pdf)|[ipynb](pub/text1.ipynb)|[markdown](pub/text1.md)|
 
 # Slides
 
@@ -49,7 +49,7 @@ Slides:
 
 |Subject|DocOnce|commands|html|pdf|ipynb|markdown|
 |-------|-------|--------|----|---|-----|--------|
-|Slides|[DocOnce](pub/slide1.do.txt)|[commands](pub/slide1.commands.sh)|[html](pub/slide1.html)|[pdf](pub/slide1.pdf)|[ipynb](pub/slide1.ipynb)|[markdown](pub/slide1.md)|
+|Slides|[DocOnce](src/slide1.do.txt)|[commands](pub/slide1.commands.sh)|[html](pub/slide1.html)|[pdf](pub/slide1.pdf)|[ipynb](pub/slide1.ipynb)|[markdown](pub/slide1.md)|
 
 
 # *Include* functionality
@@ -60,7 +60,7 @@ This example also demonstrates the option of including external Python code and 
 
 |Subject|DocOnce|commands|html|pdf|ipynb|markdown|
 |-------|-------|--------|----|---|-----|--------|
-|Include|[DocOnce](pub/include1.do.txt)|[commands](pub/include1.commands.sh)|[html](pub/include1.html)|[pdf](pub/include1.pdf)|[ipynb](pub/include1.ipynb)|[markdown](pub/include1.md)|
+|Include|[DocOnce](src/include1.do.txt)|[commands](pub/include1.commands.sh)|[html](pub/include1.html)|[pdf](pub/include1.pdf)|[ipynb](pub/include1.ipynb)|[markdown](pub/include1.md)|
 
 -----
 ## Behind the scenes
