@@ -9,7 +9,7 @@ jobs:
       - uses: docker://lexnederbragt/doconce_e9ce172:latest
       - run: docker pull lexnederbragt/doconce_e9ce172
       - run: docker run -v $(pwd):/app -t lexnederbragt/doconce_e9ce172 /bin/bash -c "source activate doconce && cd /app && cd src && make cleanall && make"    
-  doconce_1.5.9:
+  doconce_1_5_9:
   # use doconce with commit e9ce172 from April 11, 2021
     runs-on: ubuntu-latest
     steps:
