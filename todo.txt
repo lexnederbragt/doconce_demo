@@ -12,9 +12,6 @@
 * change ../img/file.png to img/file.png an d make symlink to img folder in src and pub folders?
   - also add to documentation
 * doconce clean removes *.commands.sh. How to fix?
-* adjust readme with new structure
-  - add `make clean`, `make cleanall`
-  - add `make -n | grep Target`
 * add rst output
 * code/code1.py and ../data/exp_growth.csv should be dependencies for include1
 * add `pyhid`, `pyout` and `pycod-e` environments
