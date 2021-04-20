@@ -36,8 +36,6 @@ test:
 pdf: ${SLIDE_PDF}
 
 # Building up the doconce file by adding successive doconce files
-# grep do_files ../scripts/text1.prepare.sh | cut -c 5-
-# $shell(grep do_files ../scripts/text1.prepare.sh | cut -c 5-)
 %.do.txt : ../scripts/%.prepare.sh ${DO_FILES}
 	# Target: $@
 	sh $< > $@
@@ -59,7 +57,18 @@ pdf: ${SLIDE_PDF}
 	doconce format html $< --execute && \
 	mv $*.html $@
 
-# pdf
+# Specific rule for pdf with references
+../pub/reference%.pdf : reference%.do.txt
+	# Building pdf
+	doconce format pdflatex $< --latex_code_style=vrb --execute && \
+	pdflatex reference$* && \
+	pdflatex reference$* && \
+	makeindex reference$* && \
+	bibtex reference$* && \
+	pdflatex reference$* && \
+	mv reference$*.pdf $@
+
+# All other pdfs
 ../pub/%.pdf : %.do.txt
 	# Building pdf
 	# Target: $@
@@ -68,7 +77,6 @@ pdf: ${SLIDE_PDF}
 	mv $*.pdf $@
 
 # jupyter notebook for exercises with and without answers and solutions
-# remove ipynb-*-src.tar.gz file afterwards
 ../pub/exercise%.ipynb : exercise%.do.txt
 	# Building jupyter notebook for exercises with answers and solutions
 	# Target: $@
@@ -77,6 +85,15 @@ pdf: ${SLIDE_PDF}
 	# Building jupyter notebook for exercises without answers and solutions
 	doconce format ipynb $< --execute --without_solutions --without_answers && \
 	mv exercise$*.ipynb $@
+
+
+# jupyter notebook with references
+../pub/reference%.ipynb : reference%.do.txt
+	# Building jupyter notebook
+	doconce format ipynb $< --execute \
+	--ipynb_cite=latex-plain && \
+	mv reference$*.ipynb $@
+
 
 # all other jupyter notebooks
 ../pub/%.ipynb : %.do.txt

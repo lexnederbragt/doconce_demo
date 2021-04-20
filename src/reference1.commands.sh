@@ -6,14 +6,17 @@ doconce format html reference1.do.txt --execute && \
 	mv reference1.html ../pub/reference1.html
 
 # Building pdf
-# Target: ../pub/reference1.pdf
 doconce format pdflatex reference1.do.txt --latex_code_style=vrb --execute && \
-	pdflatex reference1.tex && \
+	pdflatex reference1 && \
+	pdflatex reference1 && \
+	makeindex reference1 && \
+	bibtex reference1 && \
+	pdflatex reference1 && \
 	mv reference1.pdf ../pub/reference1.pdf
 
 # Building jupyter notebook
-# Target: ../pub/reference1.ipynb
-doconce format ipynb reference1.do.txt --execute && \
+doconce format ipynb reference1.do.txt --execute \
+	--ipynb_cite=latex-plain && \
 	mv reference1.ipynb ../pub/reference1.ipynb
 
 # Building markdown
