@@ -3,9 +3,10 @@
     and putting these in a do_dependencies.mk file
   - reuse `DO_FILES   := $(shell grep -o do_files\/.*do.txt ../scripts/${BASENAME}.prepare.sh)`
 * doconce clean removes *.commands.sh. How to fix?
-  - change to *.commands
+  - change to *.commands does not help either
 * make clean followed by make removes pdf generation from slide1.commands.sh
 * add rst output
 * code/code1.py and ../data/exp_growth.csv should be dependencies for include1
 * add `pyhid`, `pyout` and `pycod-e` environments
 * remove ipynb-*-src.tar.gz file?
+* add titles to text1, reference1, include1
