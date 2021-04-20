@@ -1,15 +1,11 @@
-* status
-  - most works
-  - can run make WHAT=<targets>
-    - but can use both slide and slide1 and slide11
-  - can run make for all
-  - see below
 * currently, any change to any file in do_files/*.do.txt triggers recreation of ALL targets
   - find a way to make correct dependencies by collecting them from scripts/*.prepare.sh
     and putting these in a do_dependencies.mk file
   - reuse `DO_FILES   := $(shell grep -o do_files\/.*do.txt ../scripts/${BASENAME}.prepare.sh)`
-* references no longer work in ipynb?
 * doconce clean removes *.commands.sh. How to fix?
+  - change to *.commands
+* make clean followed by make removes pdf generation from slide1.commands.sh
 * add rst output
 * code/code1.py and ../data/exp_growth.csv should be dependencies for include1
 * add `pyhid`, `pyout` and `pycod-e` environments
+* remove ipynb-*-src.tar.gz file?
