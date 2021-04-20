@@ -1,6 +1,0 @@
-See figure ref{PythonDict} for an illustration that explains the python dictionary concept.
-
-FIGURE: [../img/PythonDict, width=400 frac=0.8] Data structure concept of a dictionary in python. label{PythonDict}
-
-The figure was taken
-"from Wikimedia Commons" : "https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg".
