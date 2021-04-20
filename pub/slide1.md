@@ -1,6 +1,6 @@
 % Minimal slide demo
 % **Lex Nederbragt**
-% Apr 16, 2021
+% Apr 20, 2021
 
 <!-- !split -->
 
@@ -60,8 +60,8 @@ time    count
 
 See [figure](#PythonDict) for an illustration that explains the python dictionary concept.
 
-<!-- <img src="../img/PythonDict.jpg" width=400><p><em>Data structure concept of a dictionary in python. <div id="PythonDict"></div></em></p> -->
-![<p><em>Data structure concept of a dictionary in python. <div id="PythonDict"></div></em></p>](../img/PythonDict.jpg)
+<!-- <img src="img/PythonDict.jpg" width=400><p><em>Data structure concept of a dictionary in python. <div id="PythonDict"></div></em></p> -->
+![<p><em>Data structure concept of a dictionary in python. <div id="PythonDict"></div></em></p>](img/PythonDict.jpg)
 
 The figure was taken
 [from Wikimedia Commons](https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg).

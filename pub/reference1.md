@@ -42,8 +42,8 @@ time    count
 
 See [figure](#PythonDict) for an illustration that explains the python dictionary concept.
 
-<!-- <img src="../img/PythonDict.jpg" width=400><p><em>Data structure concept of a dictionary in python. From [@PythonDict]. <div id="PythonDict"></div></em></p> -->
-![<p><em>Data structure concept of a dictionary in python. From [@PythonDict]. <div id="PythonDict"></div></em></p>](../img/PythonDict.jpg)
+<!-- <img src="img/PythonDict.jpg" width=400><p><em>Data structure concept of a dictionary in python. From [@PythonDict]. <div id="PythonDict"></div></em></p> -->
+![<p><em>Data structure concept of a dictionary in python. From [@PythonDict]. <div id="PythonDict"></div></em></p>](img/PythonDict.jpg)
 
 ### Math
 

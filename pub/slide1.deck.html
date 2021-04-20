@@ -12,7 +12,6 @@ doconce format html slide1.deck.html slide1.deck deck --html_slide_theme=swiss
 <meta name="description" content="Minimal slide demo">
 <title>Minimal slide demo</title>
 
-
 <!-- deck.js: https://github.com/imakewebthings/deck.js -->
 
   <meta charset="utf-8">
@@ -31,7 +30,7 @@ doconce format html slide1.deck.html slide1.deck deck --html_slide_theme=swiss
   <link rel="stylesheet" media="screen" href="deck.js-latest/themes/style/swiss.css">
 
   <!-- Transition theme. More available in /themes/transition/ or create your own. -->
-  <link rel="stylesheet" media="screen" href="deck.js-latest/themes/transition/horizontal-slide.css">
+  <link rel="stylesheet" media="screen" href="">
 
   <!-- Basic black and white print styles -->
   <link rel="stylesheet" media="print" href="deck.js-latest/core/print.css">
@@ -77,14 +76,12 @@ bundled/html_images//small_gray_summary.png); }
 bundled/html_images//small_gray_warning.png); }
 .slide .alert-question {background-image:url(https://hplgit.github.io/doconce/
 bundled/html_images/small_gray_question.png); } */
-table, th, tr, td {
-    border: 2px solid black;
-    border-collapse: collapse;
-    padding: 2px;
+.table table, .table th, .table tr, .table tr td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 2px;
 }
 </style>
-
-
 
 
 <!-- Styles for table layout of slides -->
@@ -126,7 +123,6 @@ MathJax.Hub.Config({
 
 
 
-
 <section class="slide">
 <!-- ------------------- main content ---------------------- -->
 <h2 style="text-align: center;">Minimal slide demo</h2>  <!-- document title -->
@@ -137,10 +133,9 @@ MathJax.Hub.Config({
 </center>
 <!-- institution(s) -->
 <br>
-<center><b style="font-weight: bold">Apr 16, 2021</b></center> <!-- date -->
+<center><b style="font-weight: bold">Apr 20, 2021</b></center> <!-- date -->
 <br>
 </section>
-
 
 <section class="slide">
 <h2 id="plain-text">Plain text </h2>
@@ -179,11 +174,12 @@ MathJax.Hub.Config({
 </div>
 </section>
 
-
 <section class="slide">
 <h2 id="explanation">Explanation </h2>
 
-<p>Let's explain some of this code (setting the code to be unexecutable):</p>
+<p>Let's explain some of this code
+(setting the code to be unexecutable):
+</p>
 
 <p>The <code>for</code> loop:</p>
 
@@ -206,13 +202,12 @@ MathJax.Hub.Config({
 <p>Goes through numbers 0 to 9 and adds 1 more than each number to the <code>total</code> variable.</p>
 </section>
 
-
 <section class="slide">
 <h2 id="table">Table </h2>
 
 <p>The data on exponential growth can be found in the table below.</p>
 
-<table border="1">
+<table class="table" border="1">
 <thead>
 <tr><th align="center">time</th> <th align="center">  count  </th> </tr>
 </thead>
@@ -231,7 +226,6 @@ MathJax.Hub.Config({
 </table>
 </section>
 
-
 <section class="slide">
 <h2 id="figure">Figure </h2>
 
@@ -242,12 +236,13 @@ MathJax.Hub.Config({
 <center>
 <p class="caption">Figure 1:  Data structure concept of a dictionary in python.  <!-- caption label: PythonDict --> </p>
 </center>
-<p><img src="../img/PythonDict.jpg" align="bottom" width=400></p>
+<p><img src="img/PythonDict.jpg" align="bottom" width=400></p>
 </center>
 
-<p>The figure was taken <a href="https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg" target="_self">from Wikimedia Commons</a>.</p>
+<p>The figure was taken
+<a href="https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg" target="_self">from Wikimedia Commons</a>.
+</p>
 </section>
-
 
 <section class="slide">
 <h2 id="math">Math </h2>
@@ -262,7 +257,6 @@ K_n = rwTK_{n-1}\left (1 - \frac{K_{n-1}}{H}\right ) - K_{n-1}.
 $$
 <p>&nbsp;<br>
 </section>
-
 
 <section class="slide">
 <h2 id="slidecells">Slidecells </h2>
