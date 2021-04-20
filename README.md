@@ -9,8 +9,6 @@ write once in DocOnce format, compile to many different output formats:
 * `html` slides (deck.js, reveal.js)
 * `md` (regular markdonw)
 
-Note that on <https://lexnederbragt.github.io/doconce_demo/>, the Markdown versions will be rendered as html.
-
 Also check out the files as rendered [on github](https://github.com/lexnederbragt/doconce_demo).
 
 Files written in DocOnce format have `.do.txt` at the end of their name.
@@ -26,6 +24,8 @@ In the tables below:
 
 * `DocOnce` links to the DocOnce file used to create the different output formats
 * `commands` lists the unix commands used to convert the corresponding `.do.txt` file
+* when viewing at <https://lexnederbragt.github.io/doconce_demo/>, the Markdown versions link to the html version (this is due to how GitHub works)
+
 
 # Text
 
@@ -33,7 +33,7 @@ Demonstrates a text with Python code, a table and a figure and some math, conver
 
 |Subject|DocOnce|commands|html|pdf|ipynb|markdown|
 |-------|-------|--------|----|---|-----|--------|
-|Text|[DocOnce](src/text1.do.txt)|[commands](pub/text1.commands.sh)|[html](pub/text1.html)|[pdf](pub/text1.pdf)|[ipynb](pub/text1.ipynb)|[markdown](pub/text1.md)|
+|Text|[DocOnce](src/text1.do.txt)|[commands](src/text1.commands.sh)|[html](pub/text1.html)|[pdf](pub/text1.pdf)|[ipynb](pub/text1.ipynb)|[markdown](pub/text1.md)|
 
 # Slides
 
@@ -49,7 +49,7 @@ Slides:
 
 |Subject|DocOnce|commands|html|pdf|ipynb|markdown|
 |-------|-------|--------|----|---|-----|--------|
-|Slides|[DocOnce](src/slide1.do.txt)|[commands](pub/slide1.commands.sh)|[html](pub/slide1.html)|[pdf](pub/slide1.pdf)|[ipynb](pub/slide1.ipynb)|[markdown](pub/slide1.md)|
+|Slides|[DocOnce](src/slide1.do.txt)|[commands](src/slide1.commands.sh)|[html](pub/slide1.html)|[pdf](pub/slide1.pdf)|[ipynb](pub/slide1.ipynb)|[markdown](pub/slide1.md)|
 
 
 # *Include* functionality
@@ -60,7 +60,7 @@ This example also demonstrates the option of including external Python code and 
 
 |Subject|DocOnce|commands|html|pdf|ipynb|markdown|
 |-------|-------|--------|----|---|-----|--------|
-|Include|[DocOnce](src/include1.do.txt)|[commands](pub/include1.commands.sh)|[html](pub/include1.html)|[pdf](pub/include1.pdf)|[ipynb](pub/include1.ipynb)|[markdown](pub/include1.md)|
+|Include|[DocOnce](src/include1.do.txt)|[commands](src/include1.commands.sh)|[html](pub/include1.html)|[pdf](pub/include1.pdf)|[ipynb](pub/include1.ipynb)|[markdown](pub/include1.md)|
 
 -----
 ## Behind the scenes
