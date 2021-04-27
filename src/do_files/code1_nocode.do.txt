@@ -6,4 +6,4 @@ Now we add some python code with output:
 
 And some data
 
-@@@CODE ../data/exp_growth.csv
+@@@CODE ../data/exp_growth.csv envir=None
