@@ -1,0 +1,12 @@
+name: Manually test with latest doconce
+# Manually triggered: test with latest doconce
+on: workflow_dispatch
+jobs:
+  compile_doconce_latest:
+    # uses the latest version (commit) of doconce
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: docker://lexnederbragt/doconce_1.5.9:latest
+      - run: docker pull lexnederbragt/doconce_1.5.9
+      - run: docker run -v $(pwd):/app -t lexnederbragt/doconce_1.5.9 /bin/bash -c "source activate doconce && cd doconce && git pull && python setup.py install && cd /app && cd src && make cleanall && make"
