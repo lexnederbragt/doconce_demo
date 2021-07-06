@@ -4,6 +4,7 @@
 
 Here goes a general introduction to the exercise.
 
+<!-- --- begin subexercise --- -->
 *a)*
 Predict what this code will do
 
@@ -20,6 +21,9 @@ for i in range(a, b):
 Prints `2`
 <!-- --- end answer of exercise --- -->
 
+<!-- --- end subexercise --- -->
+
+<!-- --- begin subexercise --- -->
 *b)*
 Modify the program so that it prints 2, 3 and 4.
 
@@ -49,6 +53,19 @@ for i in range(a, b):
 
 <!-- --- end solution of exercise --- -->
 
+<!-- --- end subexercise --- -->
+
+<!-- --- begin subexercise --- -->
+*c)*
+Here is an open question without code to end this first exercise.
+
+<!-- --- begin solution of exercise --- -->
+*Solution.*
+The answer will be written text.
+<!-- --- end solution of exercise --- -->
+
+<!-- --- end subexercise --- -->
+
 <!-- --- end exercise --- -->
 
 <!-- --- begin exercise --- -->
@@ -57,6 +74,7 @@ for i in range(a, b):
 
 Here goes a general introduction to the exercise.
 
+<!-- --- begin subexercise --- -->
 *a)*
 Implement this difference equation in Python
 and generate a plot for values of $x$ from 1 to 10.
@@ -85,6 +103,9 @@ plt.show()
 
 <!-- --- end solution of exercise --- -->
 
+<!-- --- end subexercise --- -->
+
+<!-- --- begin subexercise --- -->
 *b)*
 Question without code answer:
 Can you think of an example case that has this difference equation as model?
@@ -94,6 +115,9 @@ Can you think of an example case that has this difference equation as model?
 Not really.
 <!-- --- end answer of exercise --- -->
 
+<!-- --- end subexercise --- -->
+
+<!-- --- begin subexercise --- -->
 *c)*
 Another question without code answer.
 
@@ -101,6 +125,8 @@ Another question without code answer.
 *Answer.*
 Nothing to answer...
 <!-- --- end answer of exercise --- -->
+
+<!-- --- end subexercise --- -->
 
 <!-- --- end exercise --- -->
 

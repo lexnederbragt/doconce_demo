@@ -50,8 +50,8 @@ time    count
 
 See [figure](#PythonDict) for an illustration that explains the python dictionary concept.
 
-<!-- <img src="img/PythonDict.jpg" width=400><p><em>Data structure concept of a dictionary in python. <div id="PythonDict"></div></em></p> -->
-![<p><em>Data structure concept of a dictionary in python. <div id="PythonDict"></div></em></p>](img/PythonDict.jpg)
+<!-- <img src="img/PythonDict.png" width="400" alt="Schematic illustration of how keys and values are related in Python dictionaries"><p><em>Data structure concept of a dictionary in python. <div id="PythonDict"></div></em></p> -->
+![<p><em>Data structure concept of a dictionary in python. <div id="PythonDict"></div></em></p>](img/PythonDict.png)
 
 The figure was taken
 [from Wikimedia Commons](https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg).
