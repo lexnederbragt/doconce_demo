@@ -6,14 +6,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: docker://lexnederbragt/doconce_1.5.9:latest
-      - run: docker pull lexnederbragt/doconce_1.5.9
-      - run: docker run -v $(pwd):/app -t lexnederbragt/doconce_1.5.9 /bin/bash -c "source activate doconce && cd /app && cd src && make cleanall && make"
+      - uses: docker://lexnederbragt/doconce:1.5.11_py39
+      - run: docker pull lexnederbragt/doconce:1.5.11_py39
+      - run: docker run -v $(pwd):/app -t lexnederbragt/doconce:1.5.11_py39 /bin/bash -c "source activate doconce && cd /app && cd src && make cleanall && make"
   doconce_latest:
   # update doconce to the very latest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: docker://lexnederbragt/doconce_1.5.9:latest
-      - run: docker pull lexnederbragt/doconce_1.5.9
-      - run: docker run -v $(pwd):/app -t lexnederbragt/doconce_1.5.9 /bin/bash -c "source activate doconce && cd doconce && git pull && python setup.py install && cd /app && cd src && make cleanall && make"
+      - uses: docker://lexnederbragt/doconce:1.5.11_py39
+      - run: docker pull lexnederbragt/doconce:1.5.11_py39
+      - run: docker run -v $(pwd):/app -t lexnederbragt/doconce:1.5.11_py39 /bin/bash -c "source activate doconce && pip install doconce --upgrade && cd doconce && git pull && python setup.py install && cd /app && cd src && make cleanall && make"
