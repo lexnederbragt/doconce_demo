@@ -43,6 +43,14 @@ for i in range(a, b):
 !esol
 !esubex
 
+
+!bsubex
+Here is an open question without code to end this first exercise.
+!bsol
+The answer will be written text.
+!esol
+!esubex
+
 ===== Exercise: my second exercise =====
 
 Here goes a general introduction to the exercise.

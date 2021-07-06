@@ -1,0 +1,59 @@
+======= Answers and Solutions =======
+label{ch:answerssolutions}
+
+
+
+# --- begin exercise --- answers and solutions
+===== Exercise 1: my first exercise =====
+
+__a) Answer.__
+Prints `2`
+
+#--- end subexercise ---
+
+__b) Answer.__
+There are many ways to do this. We will show two of them.
+
+# --- begin solution of exercise at end ---
+__b) Solution.__
+1 <<<!!CODE_BLOCK  pycod
+An alternative:
+2 <<<!!CODE_BLOCK  pycod
+# --- end solution of exercise at end ---
+
+#--- end subexercise ---
+
+# --- begin solution of exercise at end ---
+__c) Solution.__
+The answer will be written text.
+# --- end solution of exercise at end ---
+
+#--- end subexercise ---
+
+# --- end exercise --- solution
+
+
+
+
+# --- begin exercise --- answers and solutions
+===== Exercise 2: my second exercise =====
+
+# --- begin solution of exercise at end ---
+__a) Solution.__
+3 <<<!!CODE_BLOCK  pycod
+# --- end solution of exercise at end ---
+
+#--- end subexercise ---
+
+__b) Answer.__
+Not really.
+
+#--- end subexercise ---
+
+__c) Answer.__
+Nothing to answer...
+
+#--- end subexercise ---
+
+# --- end exercise --- solution
+

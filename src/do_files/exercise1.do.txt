@@ -42,3 +42,11 @@ for i in range(a, b):
 
 !esol
 !esubex
+
+
+!bsubex
+Here is an open question without code to end this first exercise.
+!bsol
+The answer will be written text.
+!esol
+!esubex

@@ -2,8 +2,8 @@ Here is some plain text.
 
 Now we add some python code with output:
 
-@@@CODE ../code/code1.py
+@@@CODE ../code/code1.py envir=pycod
 
 And some data
 
-@@@CODE ../data/exp_growth.csv envir=None
+@@@CODE ../data/exp_growth.csv envir=csv
