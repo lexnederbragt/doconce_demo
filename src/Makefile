@@ -1,4 +1,4 @@
-WHAT   := text1 reference1 exercise1 slide1 include1
+WHAT   := text1 reference1 exercise1 slide1 include1 admonition1
 # currently, choosing all do_files/*.do.txt, which is not optimal
 DO_FILES   := $(shell ls do_files/*.do.txt)
 DO_IN      := $(addsuffix .do.txt, ${WHAT})
@@ -51,6 +51,18 @@ pdf: ${SLIDE_PDF}
 	@echo >> $@
 	make -n --what-if $*.do.txt $(filter ../pub/$*%, ${TARGETS}) $(filter ../pub/$*%, ${TARGETS_SLIDE}) $(filter ../pub/$*%, ${SLIDE_PDF}) | ../scripts/format_commands.sh  >> $@
 
+# html for admonitions
+../pub/admonition%.html : admonition%.do.txt
+	# Building html
+	# Target: $@
+	doconce format html $< --execute \
+	--html_style=plain --html_admon=colors && \
+	mv admonition$*.html $@
+
+# alternative:
+# --html_style=bootswatch_readable --html_admon=bootstrap_alert && \
+
+# all other html
 # html
 ../pub/%.html : %.do.txt
 	# Building html
