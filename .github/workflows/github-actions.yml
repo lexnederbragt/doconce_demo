@@ -33,4 +33,4 @@ jobs:
       - name: compile
         run: |
           doconce --version
-          cd /app/src && make cleanall && make
+          cd src && make cleanall && make
