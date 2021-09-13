@@ -1,13 +1,18 @@
-name: doconce_1_4_13
+name: doconce
 channels:
+  - conda-forge
   - defaults
 dependencies:
-  - doconce
-  - python
-  - future
-  - notebook
+  - python=3
+  - pip
+  - numpy
   - matplotlib
   - pandas
-  - metakernel
-  - scipy
-  - ffmpeg
+  - regex
+  - autopep8
+  - isort
+  - jupyter
+  - jupyter_contrib_nbextensions
+  - pip:
+    - DocOnce
+    - jupyter-book
