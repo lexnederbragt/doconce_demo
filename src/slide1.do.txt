@@ -17,6 +17,16 @@ for number in range(10):
 print(total)
 !ec
 
+Let us check the type:
+!bc pycod
+print(type(total))
+!ec
+
+
+!bnotes
+These are speaker notes. They should appear by pressing `s` pr `n`
+!enotes
+
 !split
 
 ===== Explanation =====
