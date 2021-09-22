@@ -2,21 +2,21 @@ name: compile_docs
 on: [push, pull_request]
 jobs:
   doconce_1_5_12:
-  # use doconce with commit e9ce172 from April 11, 2021
+  # use doconce with indicated release from PyPi
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: docker://lexnederbragt/doconce:1.5.12_py39
-      - run: docker pull lexnederbragt/doconce:1.5.12_py39
-      - run: docker run -v $(pwd):/app -t lexnederbragt/doconce:1.5.12_py39 /bin/bash -c "source activate doconce && cd /app && cd src && make cleanall && make"
+      - uses: docker://lexnederbragt/doconce:1.5.13_py39
+      - run: docker pull lexnederbragt/doconce:1.5.13_py39
+      - run: docker run -v $(pwd):/app -t lexnederbragt/doconce:1.5.13_py39 /bin/bash -c "source activate doconce && cd /app && cd src && make cleanall && make"
   doconce_latest:
   # update doconce to the latest from PypI
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: docker://lexnederbragt/doconce:1.5.12_py39
-      - run: docker pull lexnederbragt/doconce:1.5.12_py39
-      - run: docker run -v $(pwd):/app -t lexnederbragt/doconce:1.5.12_py39 /bin/bash -c "source activate doconce && pip install doconce --upgrade && cd /app && cd src && make cleanall && make"
+      - uses: docker://lexnederbragt/doconce:1.5.13_py39
+      - run: docker pull lexnederbragt/doconce:1.5.13_py39
+      - run: docker run -v $(pwd):/app -t lexnederbragt/doconce:1.5.13_py39 /bin/bash -c "source activate doconce && pip install doconce --upgrade && cd /app && cd src && make cleanall && make"
   doconce_conda:
   # test using the provided environment.yml file
   # based on https://github.com/actions/starter-workflows/blob/main/ci/python-package-conda.yml
