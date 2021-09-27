@@ -55,7 +55,7 @@ pdf: ${SLIDE_PDF}
 ../pub/admonition%.html : admonition%.do.txt
 	# Building html
 	# Target: $@
-	doconce format html $< --execute \
+	doconce format html $< --execute=abort \
 	--html_style=plain --html_admon=colors && \
 	mv admonition$*.html $@
 
@@ -67,13 +67,13 @@ pdf: ${SLIDE_PDF}
 ../pub/%.html : %.do.txt
 	# Building html
 	# Target: $@
-	doconce format html $< --execute && \
+	doconce format html $< --execute=abort && \
 	mv $*.html $@
 
 # Specific rule for pdf with references
 ../pub/reference%.pdf : reference%.do.txt
 	# Building pdf
-	doconce format pdflatex $< --latex_code_style=vrb --execute && \
+	doconce format pdflatex $< --latex_code_style=vrb --execute=abort && \
 	pdflatex reference$* && \
 	pdflatex reference$* && \
 	makeindex reference$* && \
@@ -85,7 +85,7 @@ pdf: ${SLIDE_PDF}
 ../pub/%.pdf : %.do.txt
 	# Building pdf
 	# Target: $@
-	doconce format pdflatex $< --latex_code_style=vrb --execute && \
+	doconce format pdflatex $< --latex_code_style=vrb --execute=abort && \
 	pdflatex $*.tex && \
 	mv $*.pdf $@
 
@@ -93,17 +93,17 @@ pdf: ${SLIDE_PDF}
 ../pub/exercise%.ipynb : exercise%.do.txt
 	# Building jupyter notebook for exercises with answers and solutions
 	# Target: $@
-	doconce format ipynb $< --execute && \
+	doconce format ipynb $< --execute=abort && \
 	mv exercise$*.ipynb ../pub/exercise$*-solutions.ipynb
 	# Building jupyter notebook for exercises without answers and solutions
-	doconce format ipynb $< --execute --without_solutions --without_answers && \
+	doconce format ipynb $< --execute=abort --without_solutions --without_answers && \
 	mv exercise$*.ipynb $@
 
 
 # jupyter notebook with references
 ../pub/reference%.ipynb : reference%.do.txt
 	# Building jupyter notebook
-	doconce format ipynb $< --execute \
+	doconce format ipynb $< --execute=abort \
 	--ipynb_cite=latex-plain && \
 	mv reference$*.ipynb $@
 
@@ -112,7 +112,7 @@ pdf: ${SLIDE_PDF}
 ../pub/%.ipynb : %.do.txt
 	# Building jupyter notebook
 	# Target: $@
-	doconce format ipynb $< --execute && \
+	doconce format ipynb $< --execute=abort && \
 	mv $*.ipynb $@
 
 # markdown
@@ -131,7 +131,7 @@ ifneq (,$(findstring slide,${WHAT}))
 	# Target: $@
 	doconce format html $< --html_output=slide$*.reveal --pygments_html_style=perldoc \
 	    --keep_pygments_html_bg SLIDE_TYPE=reveal SLIDE_THEME=beige \
-		--skip_inline_comments --execute \
+		--skip_inline_comments --execute=abort \
 	&& doconce slides_html slide$*.reveal reveal --html_slide_theme=beige && \
 	mv slide$*.reveal.html $@ && \
 	rsync -a reveal.js ../pub/ && rm -r reveal.js
@@ -149,7 +149,7 @@ ifneq (,$(findstring slide,${WHAT}))
 	# Target: $@
 	doconce format html $< --html_output=slide$*.deck --pygments_html_style=autumn \
 	--keep_pygments_html_bg SLIDE_TYPE=reveal SLIDE_THEME=swiss \
-	--skip_inline_comments --execute \
+	--skip_inline_comments --execute=abort \
 	&& doconce slides_html slide$*.deck deck --html_slide_theme=swiss && \
 	mv slide$*.deck.html $@ && \
 	rsync -a deck.js-latest ../pub/ && rm -r deck.js-latest
