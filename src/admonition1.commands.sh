@@ -2,19 +2,19 @@
 
 # Building html
 # Target: ../pub/admonition1.html
-doconce format html admonition1.do.txt --execute \
+doconce format html admonition1.do.txt --execute=abort \
 	--html_style=plain --html_admon=colors && \
 	mv admonition1.html ../pub/admonition1.html
 
 # Building pdf
 # Target: ../pub/admonition1.pdf
-doconce format pdflatex admonition1.do.txt --latex_code_style=vrb --execute && \
+doconce format pdflatex admonition1.do.txt --latex_code_style=vrb --execute=abort && \
 	pdflatex admonition1.tex && \
 	mv admonition1.pdf ../pub/admonition1.pdf
 
 # Building jupyter notebook
 # Target: ../pub/admonition1.ipynb
-doconce format ipynb admonition1.do.txt --execute && \
+doconce format ipynb admonition1.do.txt --execute=abort && \
 	mv admonition1.ipynb ../pub/admonition1.ipynb
 
 # Building markdown

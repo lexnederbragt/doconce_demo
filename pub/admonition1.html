@@ -1,6 +1,6 @@
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html admonition1.do.txt --execute --html_style=plain --html_admon=colors
+doconce format html admonition1.do.txt --execute=abort --html_style=plain --html_admon=colors --execute
 -->
 <html>
 <head>
@@ -94,6 +94,67 @@ MathJax.Hub.Config({
     </div>
   </div>
 </div>
+
+<p>Let us check the type:</p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #FEEFB3">
+  <pre style="line-height: 125%;"><span style="color: #008000">print</span>(<span style="color: #008000">type</span>(total))
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+<pre>
+&lt;class &#x27;int&#x27;&gt;
+</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>This code has an error but we will allow it to explain it.</p>
+
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #FEEFB3">
+  <pre style="line-height: 125%;">total <span style="color: #666666">=</span> <span style="color: #666666">0</span>
+<span style="color: #008000; font-weight: bold">for</span> number <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #666666">10</span>):
+   total <span style="color: #666666">=</span> total <span style="color: #666666">+</span> (number <span style="color: #666666">+</span> )
+<span style="color: #008000">print</span>(total)
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+<pre>
+  File &quot;/var/folders/h_/8_ykfhqd7m7_63xgf17pqgv00000gn/T/ipykernel_39023/3111529630.py&quot;, line 3
+    total = total + (number + )
+                              ^
+SyntaxError: invalid syntax
+</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
 
@@ -156,7 +217,7 @@ MathJax.Hub.Config({
 <center> <!-- figure label: --> <div id="PythonDict"></div> <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 1:  Data structure concept of a dictionary in python.  <!-- caption label: PythonDict --> </p>
+<p class="caption">Figure 1: Data structure concept of a dictionary in python.  <!-- caption label: PythonDict --></p>
 </center>
 <p><img src="img/PythonDict.png" width="400" alt="Schematic illustration of how keys and values are related in Python dictionaries" align="bottom"></p>
 </center>

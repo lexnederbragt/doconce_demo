@@ -1,6 +1,8 @@
 ===== Admonitions =====
 !bwarning Plain text
 
+## Variant for non-slide outputs
+
 Here is some plain text.
 
 Now we add some python code with output:
@@ -9,6 +11,20 @@ Now we add some python code with output:
 total = 0
 for number in range(10):
    total = total + (number + 1)
+print(total)
+!ec
+
+Let us check the type:
+!bc pycod
+print(type(total))
+!ec
+
+This code has an error but we will allow it to explain it.
+
+!bc pycod-err
+total = 0
+for number in range(10):
+   total = total + (number + )
 print(total)
 !ec
 !ewarning

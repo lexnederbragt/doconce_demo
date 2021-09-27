@@ -6,7 +6,7 @@ echo "!split"
 echo
 echo "===== Plain text ====="
 echo
-cat do_files/code1.do.txt
+cat do_files/code2.do.txt
 echo
 echo "!split"
 echo

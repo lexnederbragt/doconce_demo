@@ -2,18 +2,18 @@
 
 # Building html
 # Target: ../pub/include1.html
-doconce format html include1.do.txt --execute && \
+doconce format html include1.do.txt --execute=abort && \
 	mv include1.html ../pub/include1.html
 
 # Building pdf
 # Target: ../pub/include1.pdf
-doconce format pdflatex include1.do.txt --latex_code_style=vrb --execute && \
+doconce format pdflatex include1.do.txt --latex_code_style=vrb --execute=abort && \
 	pdflatex include1.tex && \
 	mv include1.pdf ../pub/include1.pdf
 
 # Building jupyter notebook
 # Target: ../pub/include1.ipynb
-doconce format ipynb include1.do.txt --execute && \
+doconce format ipynb include1.do.txt --execute=abort && \
 	mv include1.ipynb ../pub/include1.ipynb
 
 # Building markdown

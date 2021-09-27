@@ -2,18 +2,18 @@
 
 # Building html
 # Target: ../pub/slide1.html
-doconce format html slide1.do.txt --execute && \
+doconce format html slide1.do.txt --execute=abort && \
 	mv slide1.html ../pub/slide1.html
 
 # Building pdf
 # Target: ../pub/slide1.pdf
-doconce format pdflatex slide1.do.txt --latex_code_style=vrb --execute && \
+doconce format pdflatex slide1.do.txt --latex_code_style=vrb --execute=abort && \
 	pdflatex slide1.tex && \
 	mv slide1.pdf ../pub/slide1.pdf
 
 # Building jupyter notebook
 # Target: ../pub/slide1.ipynb
-doconce format ipynb slide1.do.txt --execute && \
+doconce format ipynb slide1.do.txt --execute=abort && \
 	mv slide1.ipynb ../pub/slide1.ipynb
 
 # Building markdown
@@ -25,7 +25,7 @@ doconce format markdown slide1.do.txt && \
 # Target: ../pub/slide1.deck.html
 doconce format html slide1.do.txt --html_output=slide1.deck --pygments_html_style=autumn \
 	--keep_pygments_html_bg SLIDE_TYPE=reveal SLIDE_THEME=swiss \
-	--skip_inline_comments --execute \
+	--skip_inline_comments --execute=abort \
 	&& doconce slides_html slide1.deck deck --html_slide_theme=swiss && \
 	mv slide1.deck.html ../pub/slide1.deck.html && \
 	rsync -a deck.js-latest ../pub/ && rm -r deck.js-latest
@@ -34,7 +34,7 @@ doconce format html slide1.do.txt --html_output=slide1.deck --pygments_html_styl
 # Target: ../pub/slide1.reveal.html
 doconce format html slide1.do.txt --html_output=slide1.reveal --pygments_html_style=perldoc \
 	    --keep_pygments_html_bg SLIDE_TYPE=reveal SLIDE_THEME=beige \
-		--skip_inline_comments --execute \
+		--skip_inline_comments --execute=abort \
 	&& doconce slides_html slide1.reveal reveal --html_slide_theme=beige && \
 	mv slide1.reveal.html ../pub/slide1.reveal.html && \
 	rsync -a reveal.js ../pub/ && rm -r reveal.js

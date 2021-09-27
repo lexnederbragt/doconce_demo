@@ -1,5 +1,7 @@
 ===== Plain text =====
 
+## Variant for non-slide outputs
+
 Here is some plain text.
 
 Now we add some python code with output:
@@ -16,10 +18,14 @@ Let us check the type:
 print(type(total))
 !ec
 
+This code has an error but we will allow it to explain it.
 
-!bnotes
-These are speaker notes. They should appear by pressing `s` pr `n`
-!enotes
+!bc pycod-err
+total = 0
+for number in range(10):
+   total = total + (number + )
+print(total)
+!ec
 
 ===== Explanation =====
 

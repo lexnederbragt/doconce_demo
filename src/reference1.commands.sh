@@ -2,11 +2,11 @@
 
 # Building html
 # Target: ../pub/reference1.html
-doconce format html reference1.do.txt --execute && \
+doconce format html reference1.do.txt --execute=abort && \
 	mv reference1.html ../pub/reference1.html
 
 # Building pdf
-doconce format pdflatex reference1.do.txt --latex_code_style=vrb --execute && \
+doconce format pdflatex reference1.do.txt --latex_code_style=vrb --execute=abort && \
 	pdflatex reference1 && \
 	pdflatex reference1 && \
 	makeindex reference1 && \
@@ -15,7 +15,7 @@ doconce format pdflatex reference1.do.txt --latex_code_style=vrb --execute && \
 	mv reference1.pdf ../pub/reference1.pdf
 
 # Building jupyter notebook
-doconce format ipynb reference1.do.txt --execute \
+doconce format ipynb reference1.do.txt --execute=abort \
 	--ipynb_cite=latex-plain && \
 	mv reference1.ipynb ../pub/reference1.ipynb
 

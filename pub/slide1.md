@@ -1,6 +1,6 @@
 % Minimal slide demo
 % **Lex Nederbragt**
-% Jul 7, 2021
+% Sep 27, 2021
 
 <!-- !split -->
 
@@ -17,6 +17,16 @@ for number in range(10):
    total = total + (number + 1)
 print(total)
 ~~~
+
+Let us check the type:
+
+~~~{.Python}
+print(type(total))
+~~~
+
+<!-- !bnotes -->
+These are speaker notes. They should appear by pressing `s` or `n`
+<!-- !enotes -->
 
 <!-- !split -->
 

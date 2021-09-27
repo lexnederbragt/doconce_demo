@@ -13,6 +13,22 @@ for number in range(10):
 print(total)
 ~~~
 
+Let us check the type:
+
+~~~{.Python}
+print(type(total))
+~~~
+
+This code has an error but we will allow it to explain it.
+
+
+~~~{.Python}
+total = 0
+for number in range(10):
+   total = total + (number + )
+print(total)
+~~~
+
 
 
 *Explanation.* 

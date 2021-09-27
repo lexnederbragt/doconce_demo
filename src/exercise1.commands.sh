@@ -2,22 +2,22 @@
 
 # Building html
 # Target: ../pub/exercise1.html
-doconce format html exercise1.do.txt --execute && \
+doconce format html exercise1.do.txt --execute=abort && \
 	mv exercise1.html ../pub/exercise1.html
 
 # Building pdf
 # Target: ../pub/exercise1.pdf
-doconce format pdflatex exercise1.do.txt --latex_code_style=vrb --execute && \
+doconce format pdflatex exercise1.do.txt --latex_code_style=vrb --execute=abort && \
 	pdflatex exercise1.tex && \
 	mv exercise1.pdf ../pub/exercise1.pdf
 
 # Building jupyter notebook for exercises with answers and solutions
 # Target: ../pub/exercise1.ipynb
-doconce format ipynb exercise1.do.txt --execute && \
+doconce format ipynb exercise1.do.txt --execute=abort && \
 	mv exercise1.ipynb ../pub/exercise1-solutions.ipynb
 
 # Building jupyter notebook for exercises without answers and solutions
-doconce format ipynb exercise1.do.txt --execute --without_solutions --without_answers && \
+doconce format ipynb exercise1.do.txt --execute=abort --without_solutions --without_answers && \
 	mv exercise1.ipynb ../pub/exercise1.ipynb
 
 # Building markdown
