@@ -1,4 +1,4 @@
-## Variant for non-slide outputs
+## Variant for slide outputs
 
 Here is some plain text.
 
@@ -16,11 +16,6 @@ Let us check the type:
 print(type(total))
 !ec
 
-This code has an error but we will allow it to explain it.
-
-!bc pycod-err
-total = 0
-for number in range(10):
-   total = total + (number + )
-print(total)
-!ec
+!bnotes
+These are speaker notes. They should appear by pressing `s` or `n`
+!enotes
