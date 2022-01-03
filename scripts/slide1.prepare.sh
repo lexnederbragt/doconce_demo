@@ -22,7 +22,7 @@ echo
 echo "!split"
 echo "===== Figure ====="
 echo
-cat do_files/figure1.do.txt
+cat do_files/figure2.do.txt
 echo "!split"
 echo
 echo "===== Math ====="

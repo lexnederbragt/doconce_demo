@@ -67,9 +67,11 @@ The data on exponential growth can be found in the table below.
 !split
 ===== Figure =====
 
-See figure ref{PythonDict} for an illustration that explains the python dictionary concept.
+## Similar to figure1.do.xt but without figure caption
 
-FIGURE: [img/PythonDict, width=400, frac=0.8, alt="Schematic illustration of how keys and values are related in Python dictionaries"] Data structure concept of a dictionary in python. label{PythonDict}
+An illustration that explains the Python dictionary concept.
+
+FIGURE: [img/PythonDict, width=400, frac=0.8, alt="Schematic illustration of how keys and values are related in Python dictionaries"]
 
 The figure was taken
 "from Wikimedia Commons" : "https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg".
