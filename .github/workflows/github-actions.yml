@@ -1,7 +1,7 @@
 name: compile_docs
 on: [push, pull_request]
 jobs:
-  doconce_1_5_13.1:
+  doconce_1_5_13_1:
   # use doconce with indicated release from PyPi
     runs-on: ubuntu-latest
     steps:
