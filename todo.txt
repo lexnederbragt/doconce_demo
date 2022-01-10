@@ -6,6 +6,8 @@
   - change to *.commands does not help either
 * make clean followed by make removes pdf generation from slide1.commands.sh
 * add rst output
+* some HTMLs have `PDF cannot be displayed in your browser. See .doconce_figure_cache`
+  - copy the required file from `.doconce_figure_cache/`
 * code/code1.py and ../data/exp_growth.csv should be dependencies for include1
 * add `pyhid`, `pyout` and `pycod-e` environments
 * remove ipynb-*-src.tar.gz file?
