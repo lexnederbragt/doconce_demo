@@ -1,0 +1,11 @@
+This is a cell that generates a plot,
+leading to Figure ref{python_plot}:
+
+!bc pycod
+from pylab import *
+x = linspace(0, 10, 100)
+plot(x, x*x)
+show()
+!ec
+caption{$y=x^2$}
+label{python_plot}

@@ -20,6 +20,10 @@ echo "===== Math ====="
 echo
 cat do_files/math1.do.txt
 echo
+echo "===== Plotting with Python ====="
+echo
+cat do_files/pyplot.do.txt
+echo
 echo "===== References ====="
 echo
 echo "BIBFILE: papers.pub"
