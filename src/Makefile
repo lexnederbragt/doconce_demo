@@ -63,17 +63,21 @@ pdf: ${SLIDE_PDF}
 # --html_style=bootswatch_readable --html_admon=bootstrap_alert && \
 
 # all other html
-# html
+# also create symlink to .doconce_figure_cache in pub folder
+# for embedded figures resulting from code execution
 ../pub/%.html : %.do.txt
 	# Building html
 	# Target: $@
 	doconce format html $< --execute=abort && \
-	mv $*.html $@
+	mv $*.html $@ && \
+	cd ../pub && ln -fs ../src/.doconce_figure_cache .
 
 # Specific rule for pdf with references
 ../pub/reference%.pdf : reference%.do.txt
 	# Building pdf
-	doconce format pdflatex $< --latex_code_style=vrb --execute=abort && \
+	# workaround for missing package: use --latex_packages=caption
+	doconce format pdflatex $< --latex_code_style=vrb --latex_packages=caption \
+	--execute=abort && \
 	pdflatex reference$* && \
 	pdflatex reference$* && \
 	makeindex reference$* && \
@@ -166,6 +170,7 @@ endif
 # remove targets
 clean :
 	-rm ${TARGETS}
+	-rm .doconce_figure_cache/*
 # Start of slide specific commands
 ifneq (,$(findstring slide,${WHAT}))
 	-rm ${TARGETS_SLIDE}
@@ -178,3 +183,4 @@ endif
 cleanall :
 	doconce clean
 	-rm ${DO_IN} ${COMMANDS} ${TARGETS} ${TARGETS_SLIDE} ${SLIDE_PDF}
+	-rm .doconce_figure_cache/*
