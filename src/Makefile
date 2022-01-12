@@ -56,8 +56,8 @@ pdf: ${SLIDE_PDF}
 	# Building html
 	# Target: $@
 	doconce format html $< --execute=abort \
-	--html_style=plain --html_admon=colors && \
-	mv admonition$*.html $@
+	--html_style=plain --html_admon=colors \
+	--output=$@
 
 # alternative:
 # --html_style=bootswatch_readable --html_admon=bootstrap_alert && \
@@ -68,8 +68,8 @@ pdf: ${SLIDE_PDF}
 ../pub/%.html : %.do.txt
 	# Building html
 	# Target: $@
-	doconce format html $< --execute=abort && \
-	mv $*.html $@ && \
+	doconce format html $< --execute=abort \
+	--output=$@ && \
 	cd ../pub && ln -fs ../src/.doconce_figure_cache .
 
 # Specific rule for pdf with references
@@ -95,36 +95,39 @@ pdf: ${SLIDE_PDF}
 
 # jupyter notebook for exercises with and without answers and solutions
 ../pub/exercise%.ipynb : exercise%.do.txt
+	# Building jupyter notebook for exercises without answers and solutions
+	# Target: $@
+	doconce format ipynb $< --execute=abort --without_solutions --without_answers \
+	\
+--output=$@
+
+# jupyter notebook for exercises with answers and solutions
+../pub/exercise%-solutions.ipynb : exercise%.do.txt
 	# Building jupyter notebook for exercises with answers and solutions
 	# Target: $@
-	doconce format ipynb $< --execute=abort && \
-	mv exercise$*.ipynb ../pub/exercise$*-solutions.ipynb
-	# Building jupyter notebook for exercises without answers and solutions
-	doconce format ipynb $< --execute=abort --without_solutions --without_answers && \
-	mv exercise$*.ipynb $@
-
+	doconce format ipynb $< --execute=abort \
+	--output=../pub/exercise$*-solutions.ipynb
 
 # jupyter notebook with references
 ../pub/reference%.ipynb : reference%.do.txt
 	# Building jupyter notebook
 	doconce format ipynb $< --execute=abort \
-	--ipynb_cite=latex-plain && \
-	mv reference$*.ipynb $@
-
+	--ipynb_cite=latex-plain \
+	--output=$@
 
 # all other jupyter notebooks
 ../pub/%.ipynb : %.do.txt
 	# Building jupyter notebook
 	# Target: $@
-	doconce format ipynb $< --execute=abort && \
-	mv $*.ipynb $@
+	doconce format ipynb $< --execute=abort \
+	--output=$@
 
 # markdown
 ../pub/%.md : %.do.txt
 	# Building markdown
 	# Target: $@
-	doconce format markdown $< && \
-	mv $*.md $@
+	doconce format markdown $< \
+	--output=$@
 
 # Start of slide specific commands
 ifneq (,$(findstring slide,${WHAT}))
@@ -133,13 +136,13 @@ ifneq (,$(findstring slide,${WHAT}))
 ../pub/slide%.reveal.html : slide%.do.txt
 	# Building reveal.js slides
 	# Target: $@
-	doconce format html $< --html_output=slide$*.reveal --pygments_html_style=perldoc \
+	doconce format html $< --output=slide$*.reveal --pygments_html_style=perldoc \
 	    --keep_pygments_html_bg SLIDE_TYPE=reveal SLIDE_THEME=beige \
 		--skip_inline_comments --execute=abort \
-	&& doconce slides_html slide$*.reveal reveal --html_slide_theme=beige && \
-	mv slide$*.reveal.html $@ && \
-	rsync -a reveal.js ../pub/ && rm -r reveal.js
-
+	&& doconce slides_html slide$*.reveal reveal --html_slide_theme=beige \
+	--output=$@ && \
+	rsync -a reveal.js ../pub/ && rm -r reveal.js && \
+	rm slide$*.reveal.html # intermediate file
 
 # reveal.js PDF
 ../pub/%.reveal.pdf : ../pub/%.reveal.html
@@ -151,12 +154,13 @@ ifneq (,$(findstring slide,${WHAT}))
 ../pub/slide%.deck.html : slide%.do.txt
 	# Building deck.js slides
 	# Target: $@
-	doconce format html $< --html_output=slide$*.deck --pygments_html_style=autumn \
+	doconce format html $< --output=slide$*.deck --pygments_html_style=autumn \
 	--keep_pygments_html_bg --html_figure_hrule=off \
 	--skip_inline_comments --execute=abort \
-	&& doconce slides_html slide$*.deck deck --html_slide_theme=swiss && \
-	mv slide$*.deck.html $@ && \
-	rsync -a deck.js-latest ../pub/ && rm -r deck.js-latest
+	&& doconce slides_html slide$*.deck deck --html_slide_theme=swiss \
+	--output=$@ && \
+	rsync -a deck.js-latest ../pub/ && rm -r deck.js-latest && \
+	rm slide$*.deck.html # intermediate file
 
 # deck.js PDF
 ../pub/%.deck.pdf : ../pub/%.deck.html
@@ -165,7 +169,6 @@ ifneq (,$(findstring slide,${WHAT}))
 	deck2pdf  --profile=deckjs $< $@
 # End of slide specific commands
 endif
-
 
 # remove targets
 clean :
