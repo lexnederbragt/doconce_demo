@@ -24,7 +24,7 @@ doconce format markdown slide1.do.txt && \
 # Building deck.js slides
 # Target: ../pub/slide1.deck.html
 doconce format html slide1.do.txt --html_output=slide1.deck --pygments_html_style=autumn \
-	--keep_pygments_html_bg SLIDE_TYPE=reveal SLIDE_THEME=swiss \
+	--keep_pygments_html_bg --html_figure_hrule=off \
 	--skip_inline_comments --execute=abort \
 	&& doconce slides_html slide1.deck deck --html_slide_theme=swiss && \
 	mv slide1.deck.html ../pub/slide1.deck.html && \

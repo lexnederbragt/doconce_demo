@@ -55,6 +55,22 @@ K_n = rwTK_{n-1}\left (1 - \frac{K_{n-1}}{H}\right ) - K_{n-1}.
 
 $$
 
+### Plotting with Python
+
+This is a cell that generates a plot,
+leading to [Figure](#python_plot):
+
+
+~~~{.Python}
+from pylab import *
+x = linspace(0, 10, 100)
+plot(x, x*x)
+show()
+~~~
+
+caption{$y=x^2$}
+<div id="python_plot"></div>
+
 ### References
 
  1. <div id="CaiLangtangen2006"></div> **X. Cai and H. P. Langtangen**.  Parallelizing PDE Solvers Using the Python Programming Language, *Numerical Solution of Partial Differential Equations on Parallel 	Computers*, edited by **A. M. Bruaset and A. Tveito**, Springer, 2006.

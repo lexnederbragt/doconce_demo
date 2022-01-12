@@ -55,7 +55,7 @@ K_n = rwTK_{n-1}\left (1 - \frac{K_{n-1}}{H}\right ) - K_{n-1}.
 
 ===== Plotting with Python =====
 
-This is a cell that should plot and output,
+This is a cell that generates a plot,
 leading to Figure ref{python_plot}:
 
 !bc pycod
