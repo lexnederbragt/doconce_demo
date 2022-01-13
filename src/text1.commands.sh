@@ -2,21 +2,23 @@
 
 # Building html
 # Target: ../pub/text1.html
-doconce format html text1.do.txt --execute=abort && \
-	mv text1.html ../pub/text1.html
+doconce format html text1.do.txt --execute=abort \
+	--output=../pub/text1.html && \
+	cd ../pub && ln -fs ../src/.doconce_figure_cache .
 
 # Building pdf
 # Target: ../pub/text1.pdf
-doconce format pdflatex text1.do.txt --latex_code_style=vrb --execute=abort && \
+doconce format pdflatex text1.do.txt --latex_code_style=vrb \
+	--execute=abort --toc_depth=3 && \
 	pdflatex text1.tex && \
 	mv text1.pdf ../pub/text1.pdf
 
 # Building jupyter notebook
 # Target: ../pub/text1.ipynb
-doconce format ipynb text1.do.txt --execute=abort && \
-	mv text1.ipynb ../pub/text1.ipynb
+doconce format ipynb text1.do.txt --execute=abort \
+	--output=../pub/text1.ipynb
 
 # Building markdown
 # Target: ../pub/text1.md
-doconce format markdown text1.do.txt && \
-	mv text1.md ../pub/text1.md
+doconce format markdown text1.do.txt \
+	--output=../pub/text1.md

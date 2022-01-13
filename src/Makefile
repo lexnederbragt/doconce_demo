@@ -89,7 +89,8 @@ pdf: ${SLIDE_PDF}
 ../pub/%.pdf : %.do.txt
 	# Building pdf
 	# Target: $@
-	doconce format pdflatex $< --latex_code_style=vrb --execute=abort && \
+	doconce format pdflatex $< --latex_code_style=vrb \
+	--execute=abort --toc_depth=3 && \
 	pdflatex $*.tex && \
 	mv $*.pdf $@
 

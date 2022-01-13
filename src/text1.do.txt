@@ -1,3 +1,5 @@
+TOC:on
+
 ===== Plain text =====
 
 ## Variant for non-slide outputs

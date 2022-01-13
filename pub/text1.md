@@ -1,3 +1,5 @@
+<!-- Table of contents: Run pandoc with --toc option -->
+
 ### Plain text
 
 Here is some plain text.
