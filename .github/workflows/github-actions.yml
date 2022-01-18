@@ -1,3 +1,6 @@
+# 210118
+# doconce_1_5_13_1 runs into timeout because of https://github.com/doconce/doconce/pull/220
+# doconce_conda fails probably because of https://github.com/conda-forge/texlive-core-feedstock/issues/19
 name: compile_docs
 on: [push, pull_request]
 jobs:
@@ -8,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: docker://lexnederbragt/doconce:1.5.13.1_py39
       - run: docker pull lexnederbragt/doconce:1.5.13.1_py39
-#      - run: docker run -v $(pwd):/app -t lexnederbragt/doconce:1.5.13.1_py39 /bin/bash -c "source activate doconce && cd /app && cd src && make cleanall && make"
+      - run: docker run -v $(pwd):/app -t lexnederbragt/doconce:1.5.13.1_py39 /bin/bash -c "source activate doconce && cd /app && cd src && make cleanall && make"
   doconce_latest:
   # update doconce to the latest from source
     runs-on: ubuntu-latest
@@ -27,9 +30,9 @@ jobs:
         run: |
           # $CONDA is an environment variable pointing to the root of the miniconda directory
           echo $CONDA/bin >> $GITHUB_PATH
-#      - name: Install dependencies
-#        run: |
-#          conda env update --file environment.yml --name base
+      - name: Install dependencies
+        run: |
+          conda env update --file environment.yml --name base
 #      - name: compile
 #        run: |
 #          doconce --version
