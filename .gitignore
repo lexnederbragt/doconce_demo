@@ -58,6 +58,5 @@ _minted-*
 .ipynb_checkpoints/
 ipynb-*-src.tar.gz
 .*_html_file_collection
-*.doconce_figure_cache/
 *_exercises.zip
 standalone_exercises/
