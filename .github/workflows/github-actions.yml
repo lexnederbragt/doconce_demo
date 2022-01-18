@@ -2,7 +2,7 @@ name: compile_docs
 on: [push, pull_request]
 jobs:
   doconce_1_5_13_1:
-  # use doconce with indicated release from PyPi
+  # use doconce with indicated Docker container (based on release from PyPi)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -10,13 +10,18 @@ jobs:
       - run: docker pull lexnederbragt/doconce:1.5.13.1_py39
       - run: docker run -v $(pwd):/app -t lexnederbragt/doconce:1.5.13.1_py39 /bin/bash -c "source activate doconce && cd /app && cd src && make cleanall && make"
   doconce_latest:
-  # update doconce to the latest from PypI
+  # update doconce to the latest from source
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: docker://lexnederbragt/doconce:1.5.13.1_py39
       - run: docker pull lexnederbragt/doconce:1.5.13.1_py39
-      - run: docker run -v $(pwd):/app -t lexnederbragt/doconce:1.5.13.1_py39 /bin/bash -c "source activate doconce && pip install doconce --upgrade && cd /app && cd src && make cleanall && make"
+      - run: docker run -v $(pwd):/app -t lexnederbragt/doconce:1.5.13.1_py39 \
+            /bin/bash -c "\
+            source activate doconce && \
+            cd /app && git clone --depth 1 https://github.com/doconce/doconce.git && \
+            cd doconce && pip install --upgrade . && \
+            cd /app/src && make cleanall && make"
   doconce_conda:
   # test using the provided environment.yml file
   # based on https://github.com/actions/starter-workflows/blob/main/ci/python-package-conda.yml

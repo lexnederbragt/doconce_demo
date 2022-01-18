@@ -13,6 +13,7 @@ dependencies:
   - isort
   - jupyter
   - jupyter_contrib_nbextensions
+  - texlive-core
   - pip:
     - DocOnce
     - jupyter-book
