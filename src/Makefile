@@ -9,6 +9,15 @@ TARGETS    := $(addsuffix .html, ${WHAT})
 TARGETS    += $(addsuffix .pdf, ${WHAT})
 TARGETS    += $(addsuffix .ipynb, ${WHAT})
 TARGETS    += $(addsuffix .md, ${WHAT})
+
+# exercses: add solutions
+# exercise%-solutions.ipynb
+TARGETS    += $(addsuffix -solutions.ipynb, $(filter exercise%, ${WHAT}))
+# solutions%.ipynb
+TEMP       := $(filter exercise%-solutions.ipynb, ${TARGETS})
+TARGETS    += $(patsubst exercise%-solutions.ipynb, solutions%.ipynb, ${TEMP})
+
+# add destination folder
 TARGETS    := $(addprefix ../pub/, ${TARGETS})
 
 # targets specific for slides
@@ -94,7 +103,7 @@ pdf: ${SLIDE_PDF}
 	pdflatex $*.tex && \
 	mv $*.pdf $@
 
-# jupyter notebook for exercises with and without answers and solutions
+# jupyter notebook for exercises without answers and solutions
 ../pub/exercise%.ipynb : exercise%.do.txt
 	# Building jupyter notebook for exercises without answers and solutions
 	# Target: $@
@@ -107,7 +116,19 @@ pdf: ${SLIDE_PDF}
 	# Building jupyter notebook for exercises with answers and solutions
 	# Target: $@
 	doconce format ipynb $< --execute=abort \
-	--output=../pub/exercise$*-solutions.ipynb
+	--output=$@
+
+# jupyter notebook with answers and solutions only
+../pub/solutions%.ipynb : exercise%.do.txt
+	# Building jupyter notebook with answers and solutions only
+	# Target: $@
+	-rm -r standalone_exercises
+	doconce format ipynb $< --exercises_in_zip \
+		--output=delete_me.ipynb && \
+	rm delete_me.ipynb && \
+	unzip exercise$*_exercises.zip && \
+	doconce format ipynb standalone_exercises/solutions.do.txt \
+	--execute=abort --output=../$@
 
 # jupyter notebook with references
 ../pub/reference%.ipynb : reference%.do.txt
