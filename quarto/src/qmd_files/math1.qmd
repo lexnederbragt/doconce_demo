@@ -1,0 +1,5 @@
+Now we add some mathematical formula for logistic growth (@eq-logistic_growth):
+
+$$
+K_n = rwTK_{n-1}\left (1 - \frac{K_{n-1}}{H}\right ) - K_{n-1}.
+$$ {#eq-logistic_growth}

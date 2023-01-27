@@ -1,0 +1,11 @@
+---
+title: "Text1"
+author: "Lex Nederbragt"
+date: last-modified
+toc: true
+execute:
+  echo: true
+  output: true
+  error: true
+code-line-numbers: false
+---

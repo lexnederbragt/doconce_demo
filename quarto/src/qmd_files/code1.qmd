@@ -1,0 +1,29 @@
+<!-- Variant for non-slide outputs -->
+
+Here is some plain text.
+
+Now we add some python code with output:
+
+```{python}
+total = 0
+for number in range(10):
+   total = total + (number + 1)
+print(total)
+```
+
+
+Let us check the type:
+```{python}
+print(type(total))
+```
+
+
+This code has an error but we will allow it to explain it.
+
+```{python}
+total = 0
+for number in range(10):
+   total = total + (number + )
+print(total)
+```
+

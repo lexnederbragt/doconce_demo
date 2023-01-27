@@ -1,0 +1,16 @@
+cd /Users/alexajo/github/doconce_demo/quarto/src
+# src/qmd_files are snippets, as in the do_files
+# scripts equivalent of scripts folder for doconce
+# src/qmd_files/text1.yml YAML header
+sh ../scripts/text1.prepare.sh >text1.qmd  && \
+quarto render text1.qmd --to html && \
+quarto render text1.qmd --to ipynb && \
+quarto render text1.qmd --to pdf
+
+# issues ipynb
+# comments become Raw NBConvert cells
+# figures do not get figure text and label
+# cell with error does not get executed
+
+# issues pdf
+# cannot use \begin{equation*} - \end{equation*}
