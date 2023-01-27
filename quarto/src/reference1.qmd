@@ -1,0 +1,89 @@
+---
+title: "Reference 1"
+author: "Lex Nederbragt"
+date: last-modified
+toc: true
+execute:
+  echo: true
+  output: true
+  error: true
+code-line-numbers: false
+bibliography: references.bib
+csl: plos-computational-biology.csl
+---
+
+## Plain text
+
+Here is some plain text.
+
+Now we add a citation: a Langtangen book @CaiLangtangen2006. And a paper @Chorin1968.
+
+## Explanation
+
+Let's explain some of this code
+(setting the code to be unexecutable):
+
+The `for` loop:
+
+```{python}
+#| eval: false
+!bc pycod-t
+for number in range(10):
+   total = total + (number + 1)
+!ec
+
+```
+Goes through numbers 0 to 9 and adds 1 more than each number to the `total` variable.
+
+## Table
+
+The data on exponential growth can be found in the table below.
+
+| time      | count     |
+|:---------:|:---------:|
+| 60        | 10000     |
+| 90        | 25587     |
+| 120       | 76327     |
+| 150       | 212715    |
+| 180       | 619511    |
+| 210       | 1940838   |
+| 240       | 4240760   |
+| 270       | 13993730  |
+| 300       | 38971086  |
+| 330       | 105614040 |
+
+## Figure
+
+See figure @fig-pythondict for an illustration that explains the Python dictionary concept.
+
+![Data structure concept of a dictionary in Python. From @PythonDict.](img/PythonDict.png){width=400 fig-alt="Schematic illustration of how keys and values are related in Python dictionaries" #fig-pythondict}
+
+
+![Python logo](img/python-logo.png){#fig-pythonlogo}
+
+## Math
+
+Now we add some mathematical formula for logistic growth (@eq-logistic_growth):
+
+$$
+K_n = rwTK_{n-1}\left (1 - \frac{K_{n-1}}{H}\right ) - K_{n-1}.
+$$ {#eq-logistic_growth}
+
+## Plotting with Python
+
+This is a cell that generates a plot,
+leading to Figure @fig-python-plot:
+
+```{python}
+#| label: fig-python-plot
+#| fig-cap: "$y=x^2$"
+from pylab import *
+x = linspace(0, 10, 100)
+plot(x, x*x)
+show()
+```
+
+## References
+
+::: {#refs}
+:::

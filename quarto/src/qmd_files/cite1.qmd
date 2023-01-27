@@ -1,0 +1,3 @@
+Here is some plain text.
+
+Now we add a citation: a Langtangen book @CaiLangtangen2006. And a paper @Chorin1968.

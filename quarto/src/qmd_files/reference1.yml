@@ -1,0 +1,13 @@
+---
+title: "Reference 1"
+author: "Lex Nederbragt"
+date: last-modified
+toc: true
+execute:
+  echo: true
+  output: true
+  error: true
+code-line-numbers: false
+bibliography: references.bib
+csl: plos-computational-biology.csl
+---

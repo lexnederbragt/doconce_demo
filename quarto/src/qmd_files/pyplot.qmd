@@ -1,0 +1,11 @@
+This is a cell that generates a plot,
+leading to @fig-python-plot:
+
+```{python}
+#| label: fig-python-plot
+#| fig-cap: "$y=x^2$"
+from pylab import *
+x = linspace(0, 10, 100)
+plot(x, x*x)
+show()
+```
