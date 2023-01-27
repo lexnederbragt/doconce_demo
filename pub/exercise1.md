@@ -5,6 +5,7 @@
 Here goes a general introduction to the exercise.
 
 <!-- --- begin subexercise --- -->
+
 *a)*
 Predict what this code will do
 
@@ -24,6 +25,7 @@ Prints `2`
 <!-- --- end subexercise --- -->
 
 <!-- --- begin subexercise --- -->
+
 *b)*
 Modify the program so that it prints 2, 3 and 4.
 
@@ -56,6 +58,7 @@ for i in range(a, b):
 <!-- --- end subexercise --- -->
 
 <!-- --- begin subexercise --- -->
+
 *c)*
 Here is an open question without code to end this first exercise.
 
@@ -75,6 +78,7 @@ The answer will be written text.
 Here goes a general introduction to the exercise.
 
 <!-- --- begin subexercise --- -->
+
 *a)*
 Implement this difference equation in Python
 and generate a plot for values of $x$ from 1 to 10.
@@ -106,6 +110,7 @@ plt.show()
 <!-- --- end subexercise --- -->
 
 <!-- --- begin subexercise --- -->
+
 *b)*
 Question without code answer:
 Can you think of an example case that has this difference equation as model?
@@ -118,6 +123,7 @@ Not really.
 <!-- --- end subexercise --- -->
 
 <!-- --- begin subexercise --- -->
+
 *c)*
 Another question without code answer.
 
