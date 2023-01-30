@@ -2,6 +2,7 @@
 title: "Text1"
 author: "Lex Nederbragt"
 date: last-modified
+date-format: long
 toc: true
 execute:
   echo: true
@@ -51,11 +52,8 @@ The `for` loop:
 
 ```{python}
 #| eval: false
-!bc pycod-t
 for number in range(10):
    total = total + (number + 1)
-!ec
-
 ```
 Goes through numbers 0 to 9 and adds 1 more than each number to the `total` variable.
 

@@ -9,7 +9,7 @@
 <meta name="author" content="Lex Nederbragt">
 <meta name="dcterms.date" content="2023-01-30">
 
-<title>Text1</title>
+<title>Exercise 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -88,16 +88,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
 
-<script src="text1_files/libs/clipboard/clipboard.min.js"></script>
-<script src="text1_files/libs/quarto-html/quarto.js"></script>
-<script src="text1_files/libs/quarto-html/popper.min.js"></script>
-<script src="text1_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="text1_files/libs/quarto-html/anchor.min.js"></script>
-<link href="text1_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="text1_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="text1_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="text1_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="text1_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="exercise1_files/libs/clipboard/clipboard.min.js"></script>
+<script src="exercise1_files/libs/quarto-html/quarto.js"></script>
+<script src="exercise1_files/libs/quarto-html/popper.min.js"></script>
+<script src="exercise1_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="exercise1_files/libs/quarto-html/anchor.min.js"></script>
+<link href="exercise1_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="exercise1_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="exercise1_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="exercise1_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="exercise1_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
@@ -111,11 +111,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#plain-text" id="toc-plain-text" class="nav-link active" data-scroll-target="#plain-text">Plain text</a></li>
-  <li><a href="#explanation" id="toc-explanation" class="nav-link" data-scroll-target="#explanation">Explanation</a></li>
-  <li><a href="#table" id="toc-table" class="nav-link" data-scroll-target="#table">Table</a></li>
-  <li><a href="#figure" id="toc-figure" class="nav-link" data-scroll-target="#figure">Figure</a></li>
-  <li><a href="#math" id="toc-math" class="nav-link" data-scroll-target="#math">Math</a></li>
+  <li><a href="#exercise-my-first-exercise" id="toc-exercise-my-first-exercise" class="nav-link active" data-scroll-target="#exercise-my-first-exercise">Exercise: my first exercise</a>
+  <ul class="collapse">
+  <li><a href="#a" id="toc-a" class="nav-link" data-scroll-target="#a">a)</a></li>
+  <li><a href="#b" id="toc-b" class="nav-link" data-scroll-target="#b">b)</a></li>
+  <li><a href="#c" id="toc-c" class="nav-link" data-scroll-target="#c">c)</a></li>
+  </ul></li>
+  <li><a href="#exercise-my-second-exercise" id="toc-exercise-my-second-exercise" class="nav-link" data-scroll-target="#exercise-my-second-exercise">Exercise: my second exercise</a>
+  <ul class="collapse">
+  <li><a href="#a-1" id="toc-a-1" class="nav-link" data-scroll-target="#a-1">a)</a></li>
+  <li><a href="#b-1" id="toc-b-1" class="nav-link" data-scroll-target="#b-1">b)</a></li>
+  <li><a href="#c-1" id="toc-c-1" class="nav-link" data-scroll-target="#c-1">c)</a></li>
+  </ul></li>
   </ul>
 </nav>
 </div>
@@ -123,7 +130,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Text1</h1>
+<h1 class="title">Exercise 1</h1>
 </div>
 
 
@@ -150,125 +157,47 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<section id="plain-text" class="level2">
-<h2 class="anchored" data-anchor-id="plain-text">Plain text</h2>
-<!-- Variant for non-slide outputs -->
-<p>Here is some plain text.</p>
-<p>Now we add some python code with output:</p>
+<section id="exercise-my-first-exercise" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-my-first-exercise">Exercise: my first exercise</h2>
+<p>Here goes a general introduction to the exercise.</p>
+<section id="a" class="level3">
+<h3 class="anchored" data-anchor-id="a">a)</h3>
+<p>Predict what this code will do</p>
 <div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>total <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> number <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>   total <span class="op">=</span> total <span class="op">+</span> (number <span class="op">+</span> <span class="dv">1</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(total)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>55</code></pre>
-</div>
-</div>
-<p>Let us check the type:</p>
-<div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(total))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>&lt;class 'int'&gt;</code></pre>
-</div>
-</div>
-<p>This code has an error but we will allow it to explain it.</p>
-<div class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>total <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> number <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>   total <span class="op">=</span> total <span class="op">+</span> (number <span class="op">+</span> )</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(total)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-error">
-<pre><code>SyntaxError: invalid syntax (479927633.py, line 3)</code></pre>
-</div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(a, b):</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="explanation" class="level2">
-<h2 class="anchored" data-anchor-id="explanation">Explanation</h2>
-<p>Let’s explain some of this code (setting the code to be unexecutable):</p>
-<p>The <code>for</code> loop:</p>
-<div class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> number <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>   total <span class="op">=</span> total <span class="op">+</span> (number <span class="op">+</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Goes through numbers 0 to 9 and adds 1 more than each number to the <code>total</code> variable.</p>
+<section id="b" class="level3">
+<h3 class="anchored" data-anchor-id="b">b)</h3>
+<p>Modify the program so that it prints 2, 3 and 4.</p>
 </section>
-<section id="table" class="level2">
-<h2 class="anchored" data-anchor-id="table">Table</h2>
-<p>The data on exponential growth can be found in the table below.</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th style="text-align: center;">time</th>
-<th style="text-align: center;">count</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">60</td>
-<td style="text-align: center;">10000</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">90</td>
-<td style="text-align: center;">25587</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">120</td>
-<td style="text-align: center;">76327</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">150</td>
-<td style="text-align: center;">212715</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">180</td>
-<td style="text-align: center;">619511</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">210</td>
-<td style="text-align: center;">1940838</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">240</td>
-<td style="text-align: center;">4240760</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">270</td>
-<td style="text-align: center;">13993730</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">300</td>
-<td style="text-align: center;">38971086</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">330</td>
-<td style="text-align: center;">105614040</td>
-</tr>
-</tbody>
-</table>
+<section id="c" class="level3">
+<h3 class="anchored" data-anchor-id="c">c)</h3>
+<p>Here is an open question without code to end this first exercise.</p>
 </section>
-<section id="figure" class="level2">
-<h2 class="anchored" data-anchor-id="figure">Figure</h2>
-<p>See figure <a href="#fig-pythondict">Figure&nbsp;1</a> for an illustration that explains the Python dictionary concept.</p>
-<div id="fig-pythondict" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="img/PythonDict.png" class="img-fluid figure-img" alt="Schematic illustration of how keys and values are related in Python dictionaries" width="400"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;1: Data structure concept of a dictionary in Python</figcaption><p></p>
-</figure>
-</div>
-<p>The figure was taken from <a href="https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg">Wikimedia Commons</a></p>
-<div id="fig-pythonlogo" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="img/python-logo.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;2: Python logo</figcaption><p></p>
-</figure>
-</div>
 </section>
-<section id="math" class="level2">
-<h2 class="anchored" data-anchor-id="math">Math</h2>
-<p>Now we add some mathematical formula for logistic growth (<a href="#eq-logistic_growth">Equation&nbsp;1</a>):</p>
-<p><span id="eq-logistic_growth"><span class="math display">\[
-K_n = rwTK_{n-1}\left (1 - \frac{K_{n-1}}{H}\right ) - K_{n-1}.
-\tag{1}\]</span></span></p>
+<section id="exercise-my-second-exercise" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-my-second-exercise">Exercise: my second exercise</h2>
+<p>Here goes a general introduction to the exercise.</p>
+<section id="a-1" class="level3">
+<h3 class="anchored" data-anchor-id="a-1">a)</h3>
+<p>Implement this difference equation in Python and generate a plot for values of <span class="math inline">\(x\)</span> from 1 to 10.</p>
+<p><span class="math display">\[
+x_{n+1} = 1.5 x_n -20
+x_0 = 20
+\]</span></p>
+</section>
+<section id="b-1" class="level3">
+<h3 class="anchored" data-anchor-id="b-1">b)</h3>
+<p>Question without code answer: Can you think of an example case that has this difference equation as model?</p>
+</section>
+<section id="c-1" class="level3">
+<h3 class="anchored" data-anchor-id="c-1">c)</h3>
+<p>Another question without code answer.</p>
+</section>
 </section>
 
 </main>

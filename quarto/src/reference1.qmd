@@ -27,11 +27,8 @@ The `for` loop:
 
 ```{python}
 #| eval: false
-!bc pycod-t
 for number in range(10):
    total = total + (number + 1)
-!ec
-
 ```
 Goes through numbers 0 to 9 and adds 1 more than each number to the `total` variable.
 
@@ -72,7 +69,7 @@ $$ {#eq-logistic_growth}
 ## Plotting with Python
 
 This is a cell that generates a plot,
-leading to Figure @fig-python-plot:
+leading to @fig-python-plot:
 
 ```{python}
 #| label: fig-python-plot

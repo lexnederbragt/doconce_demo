@@ -2,10 +2,13 @@
 title: "Text1"
 author: "Lex Nederbragt"
 date: last-modified
+date-format: long
 toc: true
 execute:
   echo: true
   output: true
   error: true
 code-line-numbers: false
+html:
+  strip-comments: true
 ---

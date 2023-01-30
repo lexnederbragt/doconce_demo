@@ -2,6 +2,7 @@
 title: "Reference 1"
 author: "Lex Nederbragt"
 date: last-modified
+date-format: long
 toc: true
 execute:
   echo: true

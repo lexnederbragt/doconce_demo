@@ -80,42 +80,27 @@ pdf: ${SLIDE_PDF}
 	mv $*.html $@ && \
 	cd ../pub && ln -fs ../src/$*_files .
 
-# Specific rule for pdf with references
-../pub/reference%.pdf : reference%.qmd
-	# Building pdf
-	# workaround for missing package: use --latex_packages=caption
-	doconce format pdflatex $< --latex_code_style=vrb --latex_packages=caption \
-	--execute=abort && \
-	pdflatex reference$* && \
-	pdflatex reference$* && \
-	makeindex reference$* && \
-	bibtex reference$* && \
-	pdflatex reference$* && \
-	mv reference$*.pdf $@
-
 # All other pdfs
 ../pub/%.pdf : %.qmd
 	# Building pdf
 	# Target: $@
-	doconce format pdflatex $< --latex_code_style=vrb \
-	--execute=abort --toc_depth=3 && \
-	pdflatex $*.tex && \
+	quarto render $< --to pdf && \
 	mv $*.pdf $@
 
 # jupyter notebook for exercises without answers and solutions
 ../pub/exercise%.ipynb : exercise%.qmd
-	# Building jupyter notebook for exercises without answers and solutions
+	# Building jupyter notebook for exercises without solutions
 	# Target: $@
-	doconce format ipynb $< --execute=abort --without_solutions --without_answers \
-	\
---output=$@
+	quarto render $< --to ipynb && \
+	mv exercise$*.ipynb $@
 
 # jupyter notebook for exercises with answers and solutions
 ../pub/exercise%-solutions.ipynb : exercise%.qmd
-	# Building jupyter notebook for exercises with answers and solutions
+	# Building jupyter notebook for exercises with solutions
 	# Target: $@
-	doconce format ipynb $< --execute=abort \
-	--output=$@
+	quarto render $< --to ipynb \
+	--profile solutions -o exercise$*-solutions.ipynb && \
+	mv exercise$*-solutions.ipynb $@
 
 # jupyter notebook with answers and solutions only
 ../pub/solutions%.ipynb : exercise%.qmd
@@ -129,19 +114,12 @@ pdf: ${SLIDE_PDF}
 	doconce format ipynb standalone_exercises/solutions.qmd \
 	--execute=abort --output=../$@
 
-# jupyter notebook with references
-../pub/reference%.ipynb : reference%.qmd
-	# Building jupyter notebook
-	doconce format ipynb $< --execute=abort \
-	--ipynb_cite=latex-plain \
-	--output=$@
-
 # all other jupyter notebooks
 ../pub/%.ipynb : %.qmd
 	# Building jupyter notebook
 	# Target: $@
-	doconce format ipynb $< --execute=abort \
-	--output=$@
+	quarto render $< --to ipynb && \
+	mv $*.ipynb $@
 
 # markdown
 ../pub/%.md : %.qmd
