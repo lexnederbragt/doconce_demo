@@ -9,6 +9,8 @@ execute:
   output: true
   error: true
 code-line-numbers: false
+html:
+  strip-comments: true
 ---
 
 ## Plain text
@@ -76,15 +78,23 @@ The data on exponential growth can be found in the table below.
 
 ## Figure
 
-See figure @fig-pythondict for an illustration that explains the Python dictionary concept.
+See @fig-pythondict for an illustration that explains the Python dictionary concept.
 
-![Data structure concept of a dictionary in Python](img/PythonDict.png){width=400 fig-alt="Schematic illustration of how keys and values are related in Python dictionaries" #fig-pythondict}
+
+::: {#fig-pythondict}
+![](img/PythonDict.png){width=400 fig-alt="Schematic illustration of how keys and values are related in Python dictionaries"}
+
+Data structure concept of a dictionary in Python
+:::
 
 The figure was taken from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg)
 
+:::{ #fig-pythonlogo}
 
-![Python logo](img/python-logo.png){#fig-pythonlogo}
+![](img/python-logo.png)
 
+Python logo
+:::
 ## Math
 
 Now we add some mathematical formula for logistic growth (@eq-logistic_growth):
