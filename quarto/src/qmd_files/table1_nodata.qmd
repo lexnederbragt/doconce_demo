@@ -1,0 +1,3 @@
+The data on exponential growth can be found in the table below.
+
+{{< include qmd_files/exp_growth.table.qmd >}}

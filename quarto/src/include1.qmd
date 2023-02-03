@@ -1,0 +1,21 @@
+
+## Plain text
+
+{{< include qmd_files/code1_nocode.qmd >}}
+
+## Explanation
+
+{{< include qmd_files/explain1.qmd >}}
+
+## Table
+
+{{< include qmd_files/table1_nodata.qmd >}}
+
+## Figure
+
+{{< include qmd_files/figure1.qmd >}}
+
+## Math
+
+{{< include qmd_files/math1.qmd >}}
+

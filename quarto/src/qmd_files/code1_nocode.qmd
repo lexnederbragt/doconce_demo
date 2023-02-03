@@ -1,0 +1,14 @@
+Here is some plain text.
+
+Now we add some python code with output:
+
+```{python}
+{{< include ../code/code1.py >}}
+```
+
+
+And some data
+
+```
+{{< include ../data/exp_growth.csv >}}
+```
