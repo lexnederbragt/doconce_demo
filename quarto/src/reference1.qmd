@@ -2,6 +2,7 @@
 title: "Reference 1"
 author: "Lex Nederbragt"
 date: last-modified
+date-format: long
 toc: true
 execute:
   echo: true
@@ -10,6 +11,7 @@ execute:
 code-line-numbers: false
 bibliography: references.bib
 csl: plos-computational-biology.csl
+link-citations: true
 ---
 
 ## Plain text

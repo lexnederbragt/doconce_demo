@@ -11,4 +11,5 @@ execute:
 code-line-numbers: false
 bibliography: references.bib
 csl: plos-computational-biology.csl
+link-citations: true
 ---

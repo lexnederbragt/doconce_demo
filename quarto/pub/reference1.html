@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Lex Nederbragt">
-<meta name="dcterms.date" content="2023-01-27">
+<meta name="dcterms.date" content="2023-02-03">
 
 <title>Reference 1</title>
 <style>
@@ -161,7 +161,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 27, 2023</p>
+      <p class="date">February 3, 2023</p>
     </div>
   </div>
   
@@ -181,10 +181,8 @@ div.csl-indent {
 <p>Let’s explain some of this code (setting the code to be unexecutable):</p>
 <p>The <code>for</code> loop:</p>
 <div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>bc pycod<span class="op">-</span>t</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> number <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>   total <span class="op">=</span> total <span class="op">+</span> (number <span class="op">+</span> <span class="dv">1</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>ec</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> number <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>   total <span class="op">=</span> total <span class="op">+</span> (number <span class="op">+</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Goes through numbers 0 to 9 and adds 1 more than each number to the <code>total</code> variable.</p>
 </section>
@@ -267,7 +265,7 @@ K_n = rwTK_{n-1}\left (1 - \frac{K_{n-1}}{H}\right ) - K_{n-1}.
 </section>
 <section id="plotting-with-python" class="level2">
 <h2 class="anchored" data-anchor-id="plotting-with-python">Plotting with Python</h2>
-<p>This is a cell that generates a plot, leading to Figure <a href="#fig-python-plot">Figure&nbsp;3</a>:</p>
+<p>This is a cell that generates a plot, leading to <a href="#fig-python-plot">Figure&nbsp;3</a>:</p>
 <div class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pylab <span class="im">import</span> <span class="op">*</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> linspace(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">100</span>)</span>
@@ -276,7 +274,7 @@ K_n = rwTK_{n-1}\left (1 - \frac{K_{n-1}}{H}\right ) - K_{n-1}.
 <div class="cell-output cell-output-display">
 <div id="fig-python-plot" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="reference1_files/figure-html/fig-python-plot-output-1.png" width="575" height="404" class="figure-img"></p>
+<p><img src="reference1_files/figure-html/fig-python-plot-output-1.png" width="575" height="411" class="figure-img"></p>
 <p></p><figcaption class="figure-caption">Figure&nbsp;3: <span class="math inline">\(y=x^2\)</span></figcaption><p></p>
 </figure>
 </div>
