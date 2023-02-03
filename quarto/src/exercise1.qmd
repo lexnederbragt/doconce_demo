@@ -2,14 +2,17 @@
 title: "Exercise 1"
 author: "Lex Nederbragt"
 date: last-modified
+date-format: long
 toc: true
 execute:
+  eval: true
   echo: true
   output: true
   error: true
 code-line-numbers: false
 ---
 
+:::::: {.cell .markdown}
 ## Exercise: my first exercise
 
 Here goes a general introduction to the exercise.
@@ -24,6 +27,7 @@ b = 3
 for i in range(a, b):
     print(i)
 ```
+::::::
 
 ::: {.content-visible when-profile="solutions"}
 #### Solution
@@ -31,9 +35,11 @@ for i in range(a, b):
 Prints `2`
 :::
 
+:::::: {.cell .markdown}
 ### b)
 
 Modify the program so that it prints 2, 3 and 4.
+::::::
 
 ::: {.content-visible when-profile="solutions"}
 #### Solution
@@ -56,11 +62,14 @@ b = 4
 for i in range(a, b):
     print(i + 1)
 ```
+
 :::
 
+:::::: {.cell .markdown}
 ### c)
 
 Here is an open question without code to end this first exercise.
+::::::
 
 ::: {.content-visible when-profile="solutions"}
 #### Solution
@@ -68,7 +77,8 @@ Here is an open question without code to end this first exercise.
 The answer will be written text.
 :::
 
-##  Exercise: my second exercise
+:::::: {.cell .markdown}
+## Exercise: My second exercise
 
 Here goes a general introduction to the exercise.
 
@@ -82,6 +92,7 @@ x_{n+1} = 1.5 x_n -20
 x_0 = 20
 $$
 
+::::::
 
 ::: {.content-visible when-profile="solutions"}
 #### Solution
@@ -99,20 +110,24 @@ plt.show()
 ```
 :::
 
+:::::: {.cell .markdown}
 ### b)
 
 Question without code answer:
 Can you think of an example case that has this difference equation as model?
 
+::::::
 ::: {.content-visible when-profile="solutions"}
 #### Solution
 
 Not really.
 :::
 
+:::::: {.cell .markdown}
 ### c)
 
 Another question without code answer.
+::::::
 
 ::: {.content-visible when-profile="solutions"}
 #### Solution

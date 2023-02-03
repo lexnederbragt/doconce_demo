@@ -1,0 +1,13 @@
+---
+title: "Exercise 1"
+author: "Lex Nederbragt"
+date: last-modified
+date-format: long
+toc: true
+execute:
+  eval: true
+  echo: true
+  output: true
+  error: true
+code-line-numbers: false
+---

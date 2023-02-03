@@ -1,0 +1,64 @@
+:::::: {.cell .markdown}
+## Exercise: my first exercise
+
+Here goes a general introduction to the exercise.
+
+### a)
+Predict what this code will do
+
+```{python}
+#| eval: false
+a = 2
+b = 3
+for i in range(a, b):
+    print(i)
+```
+::::::
+
+::: {.content-visible when-profile="solutions"}
+#### Solution
+
+Prints `2`
+:::
+
+:::::: {.cell .markdown}
+### b)
+
+Modify the program so that it prints 2, 3 and 4.
+::::::
+
+::: {.content-visible when-profile="solutions"}
+#### Solution
+
+There are many ways to do this. We will show two of them.
+
+
+```{python}
+a = 2
+b = 5
+for i in range(a, b):
+    print(i)
+```
+
+An alternative:
+
+```{python}
+a = 1
+b = 4
+for i in range(a, b):
+    print(i + 1)
+```
+
+:::
+
+:::::: {.cell .markdown}
+### c)
+
+Here is an open question without code to end this first exercise.
+::::::
+
+::: {.content-visible when-profile="solutions"}
+#### Solution
+
+The answer will be written text.
+:::
