@@ -46,11 +46,13 @@ temp*
 # eclipse files:
 *.cproject
 *.project
+
 # misc:
 .DS_Store
 .idea
 __pycache__
 _minted-*
+.jupyter
 
 # additions
 
