@@ -1,0 +1,35 @@
+---
+format:
+    html: default
+    ipynb: default
+---
+
+# Week 2
+
+Experimenting with one qmd file for a notebook, and to extract slides from.
+Idea is callout boxes are turnd into slides.
+
+::: {.callout-tip}
+## Code example
+
+Code looks like this:
+
+```{python}
+print("Hello world!")
+```
+
+Done!
+
+:::
+
+More text
+
+::: {.callout-tip}
+## Image example
+
+Image:
+
+![](img/python-logo.png)
+
+:::
+

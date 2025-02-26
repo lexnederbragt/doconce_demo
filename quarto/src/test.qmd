@@ -1,0 +1,11 @@
+---
+format:
+    html: default
+    ipynb: default
+    pdf: default
+---
+
+![An Elephant](elephant.png){#fig-elephant}
+
+This is illustrated well by @fig-elephant.
+

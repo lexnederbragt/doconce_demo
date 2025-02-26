@@ -1,0 +1,17 @@
+See @fig-pythondict for an illustration that explains the Python dictionary concept.
+
+
+::: {#fig-pythondict}
+![](img/PythonDict.png){width=400 fig-alt="Schematic illustration of how keys and values are related in Python dictionaries"}
+
+Data structure concept of a dictionary in Python
+:::
+
+The figure was taken from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:GooglePythonClass_Day1_Part3_Pic.jpg)
+
+:::{ #fig-pythonlogo}
+
+![](img/python-logo.png)
+
+Python logo
+:::

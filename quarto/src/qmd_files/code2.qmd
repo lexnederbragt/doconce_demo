@@ -1,0 +1,21 @@
+## Variant for slide outputs
+
+Here is some plain text.
+
+Now we add some python code with output:
+
+!bc pycod
+total = 0
+for number in range(10):
+   total = total + (number + 1)
+print(total)
+!ec
+
+Let us check the type:
+!bc pycod
+print(type(total))
+!ec
+
+!bnotes
+These are speaker notes. They should appear by pressing `s` or `n`
+!enotes
